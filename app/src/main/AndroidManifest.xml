@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MyApplication"
+        tools:targetApi="31">
+        <activity
+            android:name=".pantallaresiduos6"
+            android:exported="false" />
+        <activity
+            android:name=".pantallaresiduos5"
+            android:exported="false" />
+        <activity
+            android:name=".pantallaresiduos4"
+            android:exported="false" />
+        <activity
+            android:name=".pantallaresiduos3"
+            android:exported="false" />
+        <activity
+            android:name=".pantallaresiduos2"
+            android:exported="false" />
+        <activity
+            android:name=".pantallaresiduos1"
+            android:exported="false" />
+        <activity
+            android:name=".pantallainfo3"
+            android:exported="false" />
+        <activity
+            android:name=".pantallainfo2"
+            android:exported="false" />
+        <activity
+            android:name=".pantallainfo1"
+            android:exported="false" />
+        <activity
+            android:name=".recomendaciones3"
+            android:exported="false" />
+        <activity
+            android:name=".recomendaciones2"
+            android:exported="false" />
+        <activity
+            android:name=".recomendaciones1"
+            android:exported="false" />
+        <activity
+            android:name=".pantallamasinfo"
+            android:exported="false" />
+        <activity
+            android:name=".pantallapapel"
+            android:exported="false" />
+        <activity
+            android:name=".pantallaregistro3"
+            android:exported="false" />
+        <activity
+            android:name=".pantallaregistro2"
+            android:exported="false" />
+        <activity
+            android:name=".pantallaresiduos"
+            android:exported="false" />
+        <activity
+            android:name=".pantallahogar"
+            android:exported="false" />
+        <activity
+            android:name=".pantallaenergia"
+            android:exported="false" />
+        <activity
+            android:name=".pantallaagua"
+            android:exported="false" />
+        <activity
+            android:name=".pantallaconsejos"
+            android:exported="false" />
+        <activity
+            android:name=".recomendaciones"
+            android:exported="false" />
+        <activity
+            android:name=".pantallaestadistica"
+            android:exported="false" />
+        <activity
+            android:name=".categorias"
+            android:exported="false" />
+        <activity
+            android:name=".pantallaregistro1"
+            android:exported="false" />
+        <activity
+            android:name=".activity_pantallaregistro"
+            android:exported="false" />
+        <activity
+            android:name=".activity_pantallainiciosesion1"
+            android:exported="false" />
+        <activity
+            android:name=".activity_pantallarecuperarcontrasenia"
+            android:exported="false" />
+        <activity
+            android:name=".activity_pantallainiciosesion"
+            android:exported="false" />
+        <activity
+            android:name=".activity_pantallaregistro"
+            android:exported="false" />
+        <activity
+            android:name=".activity_pantallaprincipal"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

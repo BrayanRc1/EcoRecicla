@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo_principal2"
+    tools:context=".pantallaagua">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="300dp"
+                android:layout_height="150dp"
+                android:layout_marginLeft="60dp"
+                android:layout_marginTop="20dp"
+                android:backgroundTint="@color/azul"
+                app:cardCornerRadius="15dp">
+
+                <ImageView
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:layout_marginLeft="90dp"
+                    android:layout_marginTop="3sp"
+                    android:src="@drawable/hogar" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="115sp"
+                    android:layout_marginTop="118dp"
+                    android:text="Hogar"
+                    android:textColor="@color/black"
+                    android:textSize="25sp"
+                    android:textStyle="bold"/>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="350dp"
+                android:layout_height="150dp"
+                android:layout_marginLeft="35sp"
+                android:layout_marginTop="30dp"
+                android:backgroundTint="@color/hueso"
+                app:cardCornerRadius="15dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="*Reducción de agua caliente \n *Reducción de residuos \n*Transporte sostenible"
+                    android:textSize="25sp"
+                    android:textAlignment="center"
+                    android:layout_gravity="center"/>
+
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="360dp"
+                android:layout_height="300dp"
+                android:layout_marginLeft="25sp"
+                android:layout_marginTop="40dp"
+                android:backgroundTint="@color/hueso">
+
+                <ImageView
+                    android:layout_width="400dp"
+                    android:layout_height="300dp"
+                    android:src="@drawable/imagen_de_whatsapp_2023_10_29_a_las_20_43_52_a73ebde6"/>
+
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:orientation="vertical">
+
+            <Button
+                android:layout_width="170dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="125dp"
+                android:layout_marginTop="30dp"
+                android:backgroundTint="@color/hueso"
+                android:text="Inicio"
+                android:textColor="@color/black"
+                android:textSize="25sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

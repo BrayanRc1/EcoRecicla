@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo_principal2"
+    tools:context=".pantallaagua">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="300dp"
+                android:layout_height="150dp"
+                android:layout_marginLeft="60dp"
+                android:layout_marginTop="20dp"
+                android:backgroundTint="@color/azul"
+                app:cardCornerRadius="15dp">
+
+                <ImageView
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:layout_marginLeft="90dp"
+                    android:layout_marginTop="3sp"
+                    android:src="@drawable/residuos" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="105sp"
+                    android:layout_marginTop="118dp"
+                    android:text="Residuos"
+                    android:textColor="@color/black"
+                    android:textSize="25sp"
+                    android:textStyle="bold"/>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="350dp"
+                android:layout_height="250dp"
+                android:layout_marginLeft="35sp"
+                android:layout_marginTop="30dp"
+                android:backgroundTint="@color/hueso"
+                app:cardCornerRadius="15dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="*Reduce, reutiliza, recicla \n *Compostaje \n *Evita productos desechables \n *Relecta de manera selectiva \n *Disminuye el consumo plastico \n *Reciclaje de productos electronicos \n *Reduce los residuos peligrosos \n *Reduce el desperdicio de alimentos "
+                    android:textAlignment="center"
+                    android:textSize="20sp" />
+
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="360dp"
+                android:layout_height="200dp"
+                android:layout_marginLeft="25sp"
+                android:layout_marginTop="20dp"
+                android:backgroundTint="@color/hueso">
+
+                <ImageView
+                    android:layout_width="300dp"
+                    android:layout_height="200dp"
+                    android:layout_marginLeft="30dp"
+                    android:src="@drawable/imagen_de_whatsapp_2023_10_29_a_las_20_44_05_4049d878"/>
+
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Button
+                android:layout_width="170dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="125dp"
+                android:layout_marginTop="12dp"
+                android:backgroundTint="@color/hueso"
+                android:text="Siguiente"
+                android:textColor="@color/black"
+                android:textSize="25sp" />
+
+            <Button
+            android:layout_width="170dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="125dp"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="@color/hueso"
+            android:text="Inicio"
+            android:textColor="@color/black"
+            android:textSize="25sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

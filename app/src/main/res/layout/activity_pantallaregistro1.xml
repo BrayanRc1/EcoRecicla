@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo_principal2"
+    tools:context=".pantallaregistro1">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="320dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="50dp"
+            app:cardCornerRadius="15dp"
+            android:backgroundTint="#99B2D0">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Únete a EcoRecicla"
+                android:textColor="@color/black"
+                android:textAlignment="center"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="15sp"
+                android:textSize="25dp"/>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+
+            android:layout_width="350dp"
+            android:layout_height="130dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="50dp"
+            app:cardCornerRadius="15dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Crea una cuanta para ayudar al medio ambiente y as amigos que compartan tus mismos intereses."
+            android:textAlignment="center"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/black"
+            android:textSize="23dp"/>
+
+        </androidx.cardview.widget.CardView>
+
+        <ImageView
+            android:layout_width="400dp"
+            android:layout_height="350dp"
+            android:layout_gravity="center"
+            android:src="@drawable/image_webp"/>
+
+        <Button
+            android:layout_width="350dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:backgroundTint="#ADCA96"
+            android:text="Empezar"
+            android:textColor="@color/black"
+            android:textSize="25sp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="40sp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="@color/white"
+            android:text="¿Ya tienes cuenta?"
+            android:textAlignment="center"
+            android:textColor="@color/black" />
+
+
+    </LinearLayout>
+
+</LinearLayout>
