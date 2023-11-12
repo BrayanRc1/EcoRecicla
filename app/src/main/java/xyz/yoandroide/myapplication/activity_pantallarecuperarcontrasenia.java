@@ -14,10 +14,8 @@ public class activity_pantallarecuperarcontrasenia extends AppCompatActivity {
         setContentView(R.layout.activity_pantallarecuperarcontrasenia);
 
     }
-
-    public void pPrincipal(View view) {
-        Intent pPrincipal = new Intent(this, activity_pantallarecuperarcontrasenia.class);
-        startActivity(pPrincipal);
-
-    }
+        public void pantallaPrincipal (View view){
+            Intent pantallaPrincipal = new Intent(this, activity_pantallaprincipal.class);
+            startActivity(pantallaPrincipal);
+        }
 }

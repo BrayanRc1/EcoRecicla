@@ -13,6 +13,9 @@
         android:theme="@style/Theme.MyApplication"
         tools:targetApi="31">
         <activity
+            android:name=".pantallaregistro4"
+            android:exported="false" />
+        <activity
             android:name=".pantallaresiduos6"
             android:exported="false" />
         <activity
@@ -52,9 +55,6 @@
             android:name=".pantallamasinfo"
             android:exported="false" />
         <activity
-            android:name=".pantallapapel"
-            android:exported="false" />
-        <activity
             android:name=".pantallaregistro3"
             android:exported="false" />
         <activity
@@ -91,16 +91,10 @@
             android:name=".activity_pantallaregistro"
             android:exported="false" />
         <activity
-            android:name=".activity_pantallainiciosesion1"
-            android:exported="false" />
-        <activity
             android:name=".activity_pantallarecuperarcontrasenia"
             android:exported="false" />
         <activity
             android:name=".activity_pantallainiciosesion"
-            android:exported="false" />
-        <activity
-            android:name=".activity_pantallaregistro"
             android:exported="false" />
         <activity
             android:name=".activity_pantallaprincipal"

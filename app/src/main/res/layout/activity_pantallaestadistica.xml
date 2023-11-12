@@ -172,6 +172,7 @@
             android:layout_marginTop="20dp"
             android:backgroundTint="@color/white"
             android:text="Inicio"
+            android:onClick="pantallaSesionIniciada"
             android:textColor="@color/black"
             android:textSize="25sp" />
 

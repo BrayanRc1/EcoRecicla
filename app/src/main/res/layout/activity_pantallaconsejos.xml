@@ -46,102 +46,79 @@
         </LinearLayout>
 
         <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-
-            <androidx.cardview.widget.CardView
-                android:layout_width="150dp"
-                android:layout_height="120dp"
-                android:layout_marginLeft="40dp"
-                android:layout_marginTop="15dp"
-                android:backgroundTint="#F5EDED"
-                app:cardCornerRadius="15dp">
-
-                <ImageView
-                    android:layout_width="100dp"
-                    android:layout_height="100dp"
-                    android:layout_marginLeft="25dp"
-                    android:layout_marginTop="5sp"
-                    android:src="@drawable/agua" />
-            </androidx.cardview.widget.CardView>
-
-            <androidx.cardview.widget.CardView
-            android:layout_width="150dp"
-            android:layout_height="120dp"
-            android:layout_marginLeft="40dp"
+            android:layout_width="match_parent"
+            android:layout_height="190dp"
             android:layout_marginTop="15dp"
-            android:backgroundTint="#F5EDED"
-            app:cardCornerRadius="15dp">
+            android:orientation="horizontal">
 
-            <ImageView
-                android:layout_width="100dp"
-                android:layout_height="100dp"
+            <androidx.cardview.widget.CardView
+                android:layout_width="180dp"
+                android:layout_height="180dp"
+                android:layout_marginLeft="20dp"
+                android:backgroundTint="@android:color/transparent"
+                app:cardCornerRadius="15dp">
+
+                <ImageView
+                    android:layout_width="180dp"
+                    android:layout_height="170dp"
+                    android:src="@drawable/imgagua"
+                    android:onClick="pantallaConsejoAgua"
+                    android:contentDescription="Agua"/>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="180dp"
+                android:layout_height="180dp"
                 android:layout_marginLeft="25dp"
-                android:layout_marginTop="5sp"
-                android:src="@drawable/energia" />
-        </androidx.cardview.widget.CardView>
+                android:backgroundTint="@android:color/transparent"
+                app:cardCornerRadius="15dp">
+
+                <ImageView
+                    android:layout_width="180dp"
+                    android:layout_height="170dp"
+                    android:src="@drawable/imgenergia"
+                    android:onClick="pantallaConsejoEnergia"
+                    android:contentDescription="Energia"/>
+
+            </androidx.cardview.widget.CardView>
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-
-            <Button
-                android:layout_width="170dp"
-                android:layout_height="55dp"
-                android:layout_marginLeft="30dp"
-                android:backgroundTint="@color/hueso"
-                android:text="Agua"
-                android:textColor="@color/black"
-                android:textSize="25sp" />
-
-            <Button
-                android:layout_width="170dp"
-                android:layout_height="60dp"
-                android:layout_marginLeft="20sp"
-                android:backgroundTint="@color/hueso"
-                android:text="Energia"
-                android:textColor="@color/black"
-                android:textSize="25sp" />
-
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="190dp"
             android:orientation="horizontal">
 
             <androidx.cardview.widget.CardView
-                android:layout_width="150dp"
-                android:layout_height="120dp"
-                android:layout_marginLeft="40dp"
-                android:layout_marginTop="15dp"
-                android:backgroundTint="#F5EDED"
+                android:layout_width="180dp"
+                android:layout_height="180dp"
+                android:layout_marginLeft="20dp"
+                android:backgroundTint="@android:color/transparent"
                 app:cardCornerRadius="15dp">
 
                 <ImageView
-                    android:layout_width="100dp"
-                    android:layout_height="100dp"
-                    android:layout_marginLeft="25dp"
-                    android:layout_marginTop="5sp"
-                    android:src="@drawable/hogar" />
+                    android:layout_width="180dp"
+                    android:layout_height="170dp"
+                    android:src="@drawable/imghogar"
+                    android:onClick="pantallaConsejoHogar"
+                    android:contentDescription="Hogar"/>
+
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
-                android:layout_width="150dp"
-                android:layout_height="120dp"
-                android:layout_marginLeft="40dp"
-                android:layout_marginTop="15dp"
-                android:backgroundTint="#F5EDED"
+                android:layout_width="180dp"
+                android:layout_height="180dp"
+                android:layout_marginLeft="25dp"
+                android:backgroundTint="@android:color/transparent"
                 app:cardCornerRadius="15dp">
 
                 <ImageView
-                    android:layout_width="100dp"
-                    android:layout_height="100dp"
-                    android:layout_marginLeft="25dp"
-                    android:layout_marginTop="5sp"
-                    android:src="@drawable/residuos" />
+                    android:layout_width="180dp"
+                    android:layout_height="170dp"
+                    android:src="@drawable/imgresiduos"
+                    android:onClick="pantallaConsejoResiduos"
+                    android:contentDescription="Residuos"/>
+
             </androidx.cardview.widget.CardView>
         </LinearLayout>
 
@@ -150,44 +127,20 @@
             android:layout_height="wrap_content"
             android:orientation="horizontal">
 
-            <Button
-                android:layout_width="170dp"
-                android:layout_height="55dp"
-                android:layout_marginLeft="30dp"
-                android:backgroundTint="@color/hueso"
-                android:text="Hogar"
-                android:textColor="@color/black"
-                android:textSize="25sp" />
-
-            <Button
-                android:layout_width="170dp"
-                android:layout_height="60dp"
-                android:layout_marginLeft="20sp"
-                android:backgroundTint="@color/hueso"
-                android:text="Residuos"
-                android:textColor="@color/black"
-                android:textSize="25sp" />
-
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-
             <androidx.cardview.widget.CardView
-                android:layout_width="150dp"
-                android:layout_height="120dp"
-                android:layout_marginLeft="135dp"
-                android:layout_marginTop="05dp"
-                android:backgroundTint="#F5EDED"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:layout_marginLeft="80dp"
+                android:backgroundTint="@android:color/transparent"
                 app:cardCornerRadius="15dp">
 
                 <ImageView
-                    android:layout_width="100dp"
-                    android:layout_height="100dp"
-                    android:layout_marginLeft="25dp"
-                    android:layout_marginTop="5sp"
-                    android:src="@drawable/recomendaciones" />
+                    android:layout_width="250dp"
+                    android:layout_height="170dp"
+                    android:src="@drawable/imgrecomendaciones"
+                    android:onClick="pantallaConsejoRecomendacion"
+                    android:contentDescription="Recomendaicones"/>
+
             </androidx.cardview.widget.CardView>
 
         </LinearLayout>
@@ -196,21 +149,14 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
-            <Button
-                android:layout_width="260dp"
-                android:layout_height="55dp"
-                android:layout_marginTop="10sp"
-                android:layout_marginLeft="75dp"
-                android:backgroundTint="@color/hueso"
-                android:text="Recomendaciones"
-                android:textColor="@color/black"
-                android:textSize="25sp" />
+
             <Button
                 android:layout_width="170dp"
                 android:layout_height="50dp"
                 android:layout_marginLeft="125dp"
                 android:backgroundTint="@color/hueso"
                 android:text="Inicio"
+                android:onClick="pantallaSesionIniciada"
                 android:textColor="@color/black"
                 android:textSize="25sp" />
         </LinearLayout>

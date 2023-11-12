@@ -69,7 +69,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
             android:backgroundTint="#ADCA96"
-            android:onClick="iniciarSesion"
+            android:onClick="pantallaSesionIniciada"
             android:text="Iniciar Sesión"
             android:textColor="@color/black"
             android:textSize="25sp" />
@@ -91,7 +91,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="50dp"
             android:backgroundTint="#ADCA96"
-            android:onClick="Registro"
+            android:onClick="pantallaRegistro"
             android:text="Registrarse"
             android:textColor="@color/black"
             android:textStyle="bold" />
@@ -102,26 +102,30 @@
             android:layout_marginTop="60dp"
             android:orientation="horizontal">
 
-            <ImageView
+            <ImageButton
                 android:layout_width="80dp"
                 android:layout_height="80dp"
                 android:layout_marginLeft="60dp"
-                android:src="@drawable/logowp" />
+                android:src="@drawable/logowp"
+                android:contentDescription="logowp"/>
 
-            <ImageView
+            <ImageButton
                 android:layout_width="80dp"
                 android:layout_height="80dp"
-                android:src="@drawable/logoinsta" />
+                android:src="@drawable/logoinsta"
+                android:contentDescription="logoinsta"/>
 
-            <ImageView
+            <ImageButton
                 android:layout_width="80dp"
                 android:layout_height="80dp"
-                android:src="@drawable/logoface" />
+                android:src="@drawable/logoface"
+                android:contentDescription="logoface"/>
 
-            <ImageView
+            <ImageButton
                 android:layout_width="80dp"
                 android:layout_height="80dp"
-                android:src="@drawable/logotwiter" />
+                android:src="@drawable/logotwiter"
+                android:contentDescription="logotwiter"/>
         </LinearLayout>
 
     </LinearLayout>

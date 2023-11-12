@@ -43,21 +43,15 @@
                 android:layout_marginTop="15dp"
                 app:cardCornerRadius="15dp">
 
-                <ImageView
-                    android:layout_width="110dp"
-                    android:layout_height="110dp"
-                    android:layout_marginTop="15dp"
-                    android:layout_marginLeft="40sp"
-                    android:src="@drawable/papel"/>
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Papel"
-                    android:layout_marginTop="120dp"
-                    android:layout_marginLeft="70dp"
-                    android:layout_marginBottom="15dp"
-                    android:textStyle="bold"
-                    android:textSize="25sp"/>
+                <ImageButton
+                    android:layout_width="225dp"
+                    android:layout_height="190dp"
+                    android:layout_marginLeft="-10dp"
+                    android:layout_marginTop="-5dp"
+                    android:contentDescription="imgcategoria"
+                    android:onClick="pantallaRegistropapel"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/imgpapel" />
 
             </androidx.cardview.widget.CardView>
 
@@ -74,21 +68,15 @@
                 android:layout_marginTop="15dp"
                 app:cardCornerRadius="15dp">
 
-                <ImageView
-                    android:layout_width="110dp"
-                    android:layout_height="110dp"
-                    android:layout_marginTop="15dp"
-                    android:layout_marginLeft="50sp"
-                    android:src="@drawable/plastico"/>
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Plastico"
-                    android:layout_marginTop="120dp"
-                    android:layout_marginLeft="50dp"
-                    android:layout_marginBottom="15dp"
-                    android:textStyle="bold"
-                    android:textSize="25sp"/>
+                <ImageButton
+                    android:layout_width="225dp"
+                    android:layout_height="190dp"
+                    android:layout_marginLeft="-10dp"
+                    android:layout_marginTop="-5dp"
+                    android:contentDescription="imgcategoria"
+                    android:onClick="pantallaRegistroplastico"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/imgplastico" />
 
             </androidx.cardview.widget.CardView>
 
@@ -105,21 +93,15 @@
                 android:layout_marginTop="15dp"
                 app:cardCornerRadius="15dp">
 
-                <ImageView
-                    android:layout_width="110dp"
-                    android:layout_height="110dp"
-                    android:layout_marginTop="15dp"
-                    android:layout_marginLeft="40sp"
-                    android:src="@drawable/vidrio"/>
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Vidrio"
-                    android:layout_marginTop="120dp"
-                    android:layout_marginLeft="60dp"
-                    android:layout_marginBottom="15dp"
-                    android:textStyle="bold"
-                    android:textSize="25sp"/>
+                <ImageButton
+                    android:layout_width="225dp"
+                    android:layout_height="190dp"
+                    android:layout_marginLeft="-10dp"
+                    android:layout_marginTop="-5dp"
+                    android:contentDescription="imgcategoria"
+                    android:onClick="pantallaRegistrovidrio"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/imgvidrio" />
 
             </androidx.cardview.widget.CardView>
 
@@ -130,6 +112,7 @@
                 android:layout_marginTop="20dp"
                 android:backgroundTint="@color/hueso"
                 android:text="Inicio"
+                android:onClick="pantallaSesionIniciada"
                 android:textColor="@color/black"
                 android:textSize="25sp" />
 

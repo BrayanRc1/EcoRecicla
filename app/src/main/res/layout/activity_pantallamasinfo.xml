@@ -68,28 +68,29 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="250dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="40dp"
             android:orientation="vertical">
 
             <Button
-                android:layout_width="170dp"
-                android:layout_height="50dp"
-                android:layout_marginLeft="125dp"
-                android:layout_marginTop="20dp"
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
                 android:backgroundTint="@color/hueso"
-                android:text="Inicio"
+                android:text="Siguiente"
+                android:onClick="pantallaInfo1"
                 android:textColor="@color/black"
                 android:textSize="25sp" />
             <Button
-                android:layout_width="170dp"
-                android:layout_height="50dp"
-                android:layout_marginLeft="125dp"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
                 android:backgroundTint="@color/hueso"
-                android:text="Siguiente"
+                android:text="Inicio"
+                android:onClick="pantallaSesionIniciada"
                 android:textColor="@color/black"
                 android:textSize="25sp" />
-
         </LinearLayout>
 
     </LinearLayout>

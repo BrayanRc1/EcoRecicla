@@ -106,8 +106,9 @@
             android:id="@+id/btnregistro"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Siguiente"
+            android:text="Iniciar sesión"
             android:layout_marginTop="30dp"
+            android:onClick="pantallaPrincipal"
             android:textColor="@color/black"
             android:backgroundTint="#E69393"/>
         <TextView
@@ -122,7 +123,7 @@
             android:layout_height="50dp"
             android:textSize="15sp"
             android:text="Login"
-            android:onClick="pPrincipal"
+            android:onClick="pantallaPrincipal"
             android:textStyle="bold"
             android:textColor="@color/black"
             android:backgroundTint="@color/white"/>

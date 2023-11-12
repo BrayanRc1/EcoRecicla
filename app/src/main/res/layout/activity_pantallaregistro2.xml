@@ -229,9 +229,18 @@
         <Button
             android:layout_width="170dp"
             android:layout_height="50dp"
+            android:backgroundTint="@color/hueso"
+            android:text="Atras"
+            android:onClick="pantallaCategoria"
+            android:textColor="@color/black"
+            android:textSize="25sp" />
+        <Button
+            android:layout_width="170dp"
+            android:layout_height="50dp"
             android:layout_marginTop="20dp"
             android:backgroundTint="@color/hueso"
             android:text="Inicio"
+            android:onClick="pantallaSesionIniciada"
             android:textColor="@color/black"
             android:textSize="25sp" />
 

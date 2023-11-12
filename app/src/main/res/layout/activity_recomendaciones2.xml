@@ -113,6 +113,7 @@
                 android:layout_marginTop="30dp"
                 android:backgroundTint="@color/hueso"
                 android:text="Atras"
+                android:onClick="pantallaRecomendaciones"
                 android:textColor="@color/black"
                 android:textSize="25sp" />
             <Button
@@ -122,6 +123,7 @@
                 android:layout_marginTop="10dp"
                 android:backgroundTint="@color/hueso"
                 android:text="Inicio"
+                android:onClick="pantallaSesionIniciada"
                 android:textColor="@color/black"
                 android:textSize="25sp" />
 

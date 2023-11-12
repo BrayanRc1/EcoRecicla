@@ -14,8 +14,8 @@ public class activity_pantallaregistro extends AppCompatActivity {
         setContentView(R.layout.activity_pantallaregistro);
     }
 
-    public void pPrincipal (View view){
-        Intent pPrincipal = new Intent(this,activity_pantallaprincipal.class);
-        startActivity(pPrincipal);
+    public void pantallaPrincipal (View view){
+        Intent pantallaPrincipal = new Intent(this, activity_pantallaprincipal.class);
+        startActivity(pantallaPrincipal);
     }
 }

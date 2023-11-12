@@ -60,21 +60,15 @@
                 android:layout_marginTop="20dp"
                 app:cardCornerRadius="15dp">
 
-                <ImageView
-                    android:layout_width="150dp"
-                    android:layout_height="150dp"
-                    android:layout_marginLeft="20dp"
-                    android:layout_marginTop="10sp"
-                    android:src="@drawable/registro" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="30sp"
-                    android:layout_marginTop="155dp"
-                    android:text="Categoria"
-                    android:textSize="25sp"
-                    android:textStyle="bold" />
+                <ImageButton
+                    android:layout_width="190dp"
+                    android:layout_height="210dp"
+                    android:layout_marginLeft="-5dp"
+                    android:layout_marginTop="-5dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/imgcategotia"
+                    android:onClick="pantallaCategoria"
+                    android:contentDescription="imgcategoria" />
 
             </androidx.cardview.widget.CardView>
 
@@ -85,21 +79,15 @@
                 android:layout_marginTop="20dp"
                 app:cardCornerRadius="15dp">
 
-                <ImageView
-                    android:layout_width="150dp"
-                    android:layout_height="150dp"
-                    android:layout_marginLeft="20dp"
-                    android:layout_marginTop="10sp"
-                    android:src="@drawable/estadistica" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="30sp"
-                    android:layout_marginTop="160dp"
-                    android:text="Estadistica"
-                    android:textSize="25sp"
-                    android:textStyle="bold" />
+                <ImageButton
+                    android:layout_width="190dp"
+                    android:layout_height="210dp"
+                    android:layout_marginLeft="-5dp"
+                    android:layout_marginTop="-5dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/imgestadistica"
+                    android:onClick="pantallaEstadistica"
+                    android:contentDescription="imgestadistica" />
 
             </androidx.cardview.widget.CardView>
 
@@ -118,21 +106,15 @@
                 android:layout_marginTop="20dp"
                 app:cardCornerRadius="15dp">
 
-                <ImageView
-                    android:layout_width="150dp"
-                    android:layout_height="150dp"
-                    android:layout_marginLeft="20dp"
-                    android:layout_marginTop="10sp"
-                    android:src="@drawable/consejos" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="40sp"
-                    android:layout_marginTop="155dp"
-                    android:text="Consejos"
-                    android:textSize="25sp"
-                    android:textStyle="bold" />
+                <ImageButton
+                    android:layout_width="190dp"
+                    android:layout_height="210dp"
+                    android:layout_marginLeft="-5dp"
+                    android:layout_marginTop="-5dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/imgconsejos"
+                    android:onClick="pantallaConsejos"
+                    android:contentDescription="imgconsejos" />
 
             </androidx.cardview.widget.CardView>
 
@@ -143,21 +125,15 @@
                 android:layout_marginTop="20dp"
                 app:cardCornerRadius="15dp">
 
-                <ImageView
-                    android:layout_width="150dp"
-                    android:layout_height="150dp"
-                    android:layout_marginLeft="20dp"
-                    android:layout_marginTop="10sp"
-                    android:src="@drawable/info" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="40sp"
-                    android:layout_marginTop="155dp"
-                    android:text="Más info"
-                    android:textSize="25sp"
-                    android:textStyle="bold" />
+                <ImageButton
+                    android:layout_width="190dp"
+                    android:layout_height="210dp"
+                    android:layout_marginLeft="-5dp"
+                    android:layout_marginTop="-5dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/imgmasinfo"
+                    android:onClick="pantallaMasinfo"
+                    android:contentDescription="imgmasinfo" />
 
             </androidx.cardview.widget.CardView>
 
@@ -174,7 +150,8 @@
                 android:backgroundTint="@color/rojo"
                 android:textColor="@color/black"
                 android:textStyle="bold"
-                android:layout_marginLeft="130dp"/>
+                android:onClick="pantallaPrincipal"
+                android:layout_marginLeft="140dp"/>
 
 
         </LinearLayout>

@@ -79,6 +79,7 @@
             android:backgroundTint="#E69393"
             android:gravity="center"
             android:text="Siguiente"
+            android:onClick="pantallaPrincipal"
             android:textColor="@color/black"
             android:layout_marginTop="60dp"/>
 
