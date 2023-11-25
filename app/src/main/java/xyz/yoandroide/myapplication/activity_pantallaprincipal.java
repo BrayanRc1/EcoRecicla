@@ -114,6 +114,7 @@ public class activity_pantallaprincipal extends AppCompatActivity {
         btnOlvidarContrasenia.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+
                 startActivity(activity_pantallarecuperarcontrasenia);
             }
         });
