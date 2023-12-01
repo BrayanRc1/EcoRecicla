@@ -1,90 +1,100 @@
 package xyz.yoandroide.myapplication;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.Toast;
 
+import androidx.appcompat.app.AppCompatActivity;
+
 public class pantallaregistro2 extends AppCompatActivity {
 
-    Button btnpantallaCategoria;
+    private EditText editTextCantidad;
+    private Spinner spinnerPapel;
+    private Spinner spinnerMes;
+    private Button buttonRegistrar;
     Button btnpantallaSesionIniciada;
-    Intent categorias;
+    Button btnpantallaCategoria;
+    Intent activity_categorias;
     Intent activity_pantallainiciosesion;
 
-    private Spinner spinnerCategoria, spinnerMes;
-    private EditText editTextKilosPlastico, editTextHojasPapel;
-    private Button btnGuardar;
-
+    private static final String PREFS_NAME = "RegistroPrefs";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_pantallaregistro2);
 
-        // Referencias a los elementos de la interfaz
-        spinnerCategoria = findViewById(R.id.spinnerCategoria);
+        editTextCantidad = findViewById(R.id.editTextCantidad);
         spinnerMes = findViewById(R.id.spinnerMes);
-        editTextKilosPlastico = findViewById(R.id.editTextKilosPlastico);
-        editTextHojasPapel = findViewById(R.id.editTextHojasPapel);
-        btnGuardar = findViewById(R.id.btnGuardar);
+        buttonRegistrar = findViewById(R.id.btnRegistrar);
+        spinnerPapel = findViewById(R.id.spinnerPapel);
+        activity_categorias = new Intent(this, categorias.class);
+        activity_pantallainiciosesion = new Intent(this, activity_pantallainiciosesion.class);
 
-        // Configurar adaptadores para spinners
-        ArrayAdapter<CharSequence> categoriaAdapter = ArrayAdapter.createFromResource(
-                this,
-                R.array.categorias_array,
-                android.R.layout.simple_spinner_item
-        );
-        categoriaAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-        spinnerCategoria.setAdapter(categoriaAdapter);
+        // Crea un ArrayAdapter por cada elemento del array
+        ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this, R.array.array_papel, android.R.layout.simple_spinner_item);
+        ArrayAdapter<CharSequence> adapter1 = ArrayAdapter.createFromResource(this, R.array.array_mes, android.R.layout.simple_spinner_item);
+        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        adapter1.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
 
-        ArrayAdapter<CharSequence> mesAdapter = ArrayAdapter.createFromResource(
-                this,
-                R.array.meses_array,
-                android.R.layout.simple_spinner_item
-        );
-        mesAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-        spinnerMes.setAdapter(mesAdapter);
+        spinnerPapel.setAdapter(adapter);
+        spinnerMes.setAdapter(adapter1);
 
-        // Configurar clic del botón
-        btnGuardar.setOnClickListener(new View.OnClickListener() {
+        buttonRegistrar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                guardarDatos();
+                registrarDatos();
             }
         });
     }
 
-    private void guardarDatos() {
-        // Aquí puedes obtener los valores ingresados por el usuario
-        String categoria = spinnerCategoria.getSelectedItem().toString();
+    private void registrarDatos() {
+        String cantidad = editTextCantidad.getText().toString();
+        String papel = spinnerPapel.getSelectedItem().toString();
         String mes = spinnerMes.getSelectedItem().toString();
-        String kilosPlastico = editTextKilosPlastico.getText().toString();
-        String hojasPapel = editTextHojasPapel.getText().toString();
+        if (cantidad.isEmpty() || papel.isEmpty() || mes.isEmpty()) {
+            Toast.makeText(this, "Por favor, Completar todos los campos", Toast.LENGTH_SHORT).show();
+            return;
+        }
 
-        // Aquí puedes realizar la lógica de almacenamiento o envío de datos
-        // Por ahora, solo mostraremos un mensaje de ejemplo
-        String mensaje = "Categoria: " + categoria + "\nMes: " + mes + "\nKilos Plástico: " +
-                kilosPlastico + "\nHojas Papel: " + hojasPapel;
+        try {
+            // Convertir la cantidad a un número decimal
+            double cantidadReciclada = Double.parseDouble(cantidad);
 
-        Toast.makeText(this, mensaje, Toast.LENGTH_LONG).show();
+            // Almacenar datos en SharedPreferences
+            SharedPreferences prefs = getSharedPreferences(PREFS_NAME, MODE_PRIVATE);
+            SharedPreferences.Editor editor = prefs.edit();
 
+            // Utilizar claves únicas para cada tipo de dato
+            editor.putString("cantidad", cantidad);
+            editor.putString("papel", papel);
+            editor.putString("mes", mes);
 
-        // Cambio de pantalla a registro de categorias papel, plastico y vidrio
+            // Aplicar los cambios
+            editor.apply();
+
+            Toast.makeText(this, "Registro exitoso", Toast.LENGTH_SHORT).show();
+
+        } catch (NumberFormatException e) {
+            // Manejar error si no se puede convertir a un número
+            Toast.makeText(this, "Ingrese una cantidad válida", Toast.LENGTH_SHORT).show();
+        }
+
+        // Cambio de pantalla a categorias
         btnpantallaCategoria.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(categorias);
+                startActivity(activity_categorias);
             }
         });
-        // Cambio de pantalla a la sesion iniciada
+
+        //Cambio de pantalla a sesión iniciada
         btnpantallaSesionIniciada.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

@@ -1,12 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <array name="categorias_array">
-        <item>Plástico</item>
+    <array name="array_papel">
         <item>Papel</item>
+    </array>
+    <array name="array_plastico">
+        <item>Plástico</item>
+    </array>
+    <array name="array_vidrio">
         <item>Vidrio</item>
     </array>
 
-    <array name="meses_array">
+    <array name="array_mes">
         <item>Enero</item>
         <item>Febrero</item>
         <item>Marzo</item>

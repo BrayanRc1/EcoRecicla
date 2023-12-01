@@ -114,7 +114,7 @@ public class activity_pantallaprincipal extends AppCompatActivity {
         btnOlvidarContrasenia.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                // Iniciar la actividad en recuperar contraseña
                 startActivity(activity_pantallarecuperarcontrasenia);
             }
         });

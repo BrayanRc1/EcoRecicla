@@ -8,109 +8,56 @@
     tools:context=".pantallaregistro2">
 
     <LinearLayout
-        android:id="@+id/relativeLayout"
+        android:id="@+id/linearLayout4"
         android:layout_width="match_parent"
         android:layout_height="600dp"
         android:orientation="vertical"
-        android:padding="30dp"
+        android:padding="20dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
-        <androidx.cardview.widget.CardView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            app:cardCornerRadius="15dp"
-            android:backgroundTint="#ADC2AD">
-
         <TextView
-            android:id="@+id/textViewCategoria"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Categoría:"
-            android:layout_marginTop="10dp"
-            android:textColor="@color/black"
-            android:textSize="25sp"
-            android:layout_marginLeft="20dp"
-            android:layout_marginBottom="8dp"/>
-
-        <Spinner
-            android:id="@+id/spinnerCategoria"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="16dp"
+            android:text="Registro de Reciclaje"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+        <EditText
+            android:id="@+id/editTextCantidad"
             android:layout_width="match_parent"
             android:layout_height="50dp"
-            android:layout_marginTop="60dp"
-            android:backgroundTint="@color/hueso"
-            android:layout_below="@id/textViewCategoria"
-            android:layout_marginBottom="16dp"/>
-        </androidx.cardview.widget.CardView>
-
-        <androidx.cardview.widget.CardView
+            android:layout_marginBottom="16dp"
+            android:background="@color/hueso"
+            android:hint="Cantidad de material reciclado (kg)"
+            android:inputType="numberDecimal" />
+        <Spinner
+            android:id="@+id/spinnerPapel"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="20sp"
-            app:cardCornerRadius="15dp"
-            android:backgroundTint="#ADC2AD">
-
-        <TextView
-            android:id="@+id/textViewMes"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Mes:"
-            android:textColor="@color/black"
-            android:textSize="25sp"
-            android:layout_below="@id/spinnerCategoria"
-            android:layout_marginTop="16dp"
-            android:layout_marginLeft="20dp"/>
-
+            android:layout_height="55dp"
+            android:layout_marginBottom="16dp"
+            android:background="@color/hueso"
+            android:prompt="@string/tu_referencia_aqui"
+            android:visibility="visible"/>
         <Spinner
             android:id="@+id/spinnerMes"
             android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:layout_marginTop="50dp"
-            android:backgroundTint="@color/hueso"
-            android:outlineSpotShadowColor="@color/black"
-            android:layout_below="@id/textViewMes"
-            android:layout_marginBottom="16dp"/>
-        </androidx.cardview.widget.CardView>
-
-        <EditText
-            android:id="@+id/editTextKilosPlastico"
+            android:layout_height="55dp"
+            android:layout_marginBottom="16dp"
+            android:background="@color/hueso"
+            android:hint="Seleccione Mes" />
+        <Button
+            android:id="@+id/btnRegistrar"
             android:layout_width="match_parent"
-            android:layout_height="45dp"
-            android:layout_below="@id/spinnerMes"
-            android:hint="Kilos de Plástico Reciclados"
-            android:layout_marginTop="30dp"
-            android:textSize="22dp"
-            android:textAlignment="center"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Registrar"
             android:textColor="@color/black"
-            android:background="@color/white"
-            android:inputType="numberDecimal"
-            android:layout_marginBottom="16dp"/>
-
-        <EditText
-            android:id="@+id/editTextHojasPapel"
-            android:layout_width="match_parent"
-            android:layout_height="45dp"
-            android:layout_below="@id/editTextKilosPlastico"
-            android:hint="Número de Hojas de Papel Reciclado"
-            android:textAlignment="center"
-            android:textSize="20dp"
-            android:textColor="@color/black"
-            android:background="@color/white"
-            android:inputType="number"
-            android:layout_marginBottom="16dp"/>
-
-            <Button
-                android:id="@+id/btnGuardar"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/editTextHojasPapel"
-                android:backgroundTint="@color/hueso"
-                android:text="Guardar"
-                android:layout_marginTop="25dp"
-                android:textSize="25sp"
-                android:textColor="@color/black" />
-
+            android:textSize="25dp"
+            android:backgroundTint="@color/hueso"/>
     </LinearLayout>
 
     <LinearLayout
@@ -122,7 +69,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/relativeLayout">
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout4">
 
 
         <Button
