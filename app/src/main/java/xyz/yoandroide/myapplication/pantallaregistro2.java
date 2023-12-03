@@ -18,10 +18,8 @@ public class pantallaregistro2 extends AppCompatActivity {
     private Spinner spinnerPapel;
     private Spinner spinnerMes;
     private Button buttonRegistrar;
-    Button btnpantallaSesionIniciada;
-    Button btnpantallaCategoria;
-    Intent activity_categorias;
-    Intent activity_pantallainiciosesion;
+    private Button btnBorrarRegistro;
+
 
     private static final String PREFS_NAME = "RegistroPrefs";
 
@@ -34,8 +32,7 @@ public class pantallaregistro2 extends AppCompatActivity {
         spinnerMes = findViewById(R.id.spinnerMes);
         buttonRegistrar = findViewById(R.id.btnRegistrar);
         spinnerPapel = findViewById(R.id.spinnerPapel);
-        activity_categorias = new Intent(this, categorias.class);
-        activity_pantallainiciosesion = new Intent(this, activity_pantallainiciosesion.class);
+        btnBorrarRegistro = findViewById(R.id.btnBorrarRegistro);
 
         // Crea un ArrayAdapter por cada elemento del array
         ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this, R.array.array_papel, android.R.layout.simple_spinner_item);
@@ -52,12 +49,19 @@ public class pantallaregistro2 extends AppCompatActivity {
                 registrarDatos();
             }
         });
+        btnBorrarRegistro.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                btnBorrarRegistro();
+            }
+        });
     }
 
     private void registrarDatos() {
         String cantidad = editTextCantidad.getText().toString();
         String papel = spinnerPapel.getSelectedItem().toString();
         String mes = spinnerMes.getSelectedItem().toString();
+        SharedPreferences prefs = getSharedPreferences(PREFS_NAME, MODE_PRIVATE);
         if (cantidad.isEmpty() || papel.isEmpty() || mes.isEmpty()) {
             Toast.makeText(this, "Por favor, Completar todos los campos", Toast.LENGTH_SHORT).show();
             return;
@@ -66,15 +70,20 @@ public class pantallaregistro2 extends AppCompatActivity {
         try {
             // Convertir la cantidad a un número decimal
             double cantidadReciclada = Double.parseDouble(cantidad);
+            // cantidad anterior del mes
+            float cantidadAnterior = prefs.getFloat("cantidad_" + mes, 0f);
+            // Suma de las cantidades
+            float catidadRecicladaFloat = (float) cantidadReciclada;
+            float cantidadNueva = cantidadAnterior + catidadRecicladaFloat;
 
             // Almacenar datos en SharedPreferences
-            SharedPreferences prefs = getSharedPreferences(PREFS_NAME, MODE_PRIVATE);
             SharedPreferences.Editor editor = prefs.edit();
 
             // Utilizar claves únicas para cada tipo de dato
             editor.putString("cantidad", cantidad);
             editor.putString("papel", papel);
             editor.putString("mes", mes);
+            editor.putFloat("cantidad_" + mes, cantidadNueva);
 
             // Aplicar los cambios
             editor.apply();
@@ -86,20 +95,29 @@ public class pantallaregistro2 extends AppCompatActivity {
             Toast.makeText(this, "Ingrese una cantidad válida", Toast.LENGTH_SHORT).show();
         }
 
-        // Cambio de pantalla a categorias
-        btnpantallaCategoria.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                startActivity(activity_categorias);
-            }
-        });
+    }
+    private void btnBorrarRegistro(){
+        SharedPreferences prefs = getSharedPreferences("RegistroPrefs", MODE_PRIVATE);
+        SharedPreferences.Editor editor = prefs.edit();
 
-        //Cambio de pantalla a sesión iniciada
-        btnpantallaSesionIniciada.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                startActivity(activity_pantallainiciosesion);
-            }
-        });
+        editor.clear();
+        editor.apply();
+        Toast.makeText(this, "Registros borrados", Toast.LENGTH_SHORT).show();
+    }
+    //Boton Inicio nos lleva a pantalla de la sesión iniciada
+    public void pantallaSesionIniciada(View view) {
+        Intent pantallaSesionIniciada = new Intent(this, activity_pantallainiciosesion.class);
+        startActivity(pantallaSesionIniciada);
+    }
+
+    //Boton atras nos lleva a pantalla categorias
+    public void pantallaCategoria(View view) {
+        Intent pantallaCategoria = new Intent(this, categorias.class);
+        startActivity(pantallaCategoria);
+    }
+    //Botton estadistica nos lleva a pantalla estadistica
+    public void pantallaEstadistica(View view) {
+        Intent pantallaEstadistica = new Intent(this, pantallaestadistica.class);
+        startActivity(pantallaEstadistica);
     }
 }

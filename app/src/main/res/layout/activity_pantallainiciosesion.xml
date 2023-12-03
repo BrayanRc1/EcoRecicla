@@ -65,10 +65,10 @@
                     android:layout_height="210dp"
                     android:layout_marginLeft="-5dp"
                     android:layout_marginTop="-5dp"
-                    android:scaleType="centerCrop"
-                    android:src="@drawable/imgcategotia"
+                    android:contentDescription="imgcategoria"
                     android:onClick="pantallaCategoria"
-                    android:contentDescription="imgcategoria" />
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/imgcategotia" />
 
             </androidx.cardview.widget.CardView>
 
