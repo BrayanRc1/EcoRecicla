@@ -12,7 +12,7 @@ import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-public class pantallaregistro2 extends AppCompatActivity {
+public class pantallaregistro2_2 extends AppCompatActivity {
 
     private EditText editTextCantidad;
     private Spinner spinnerPapel;
