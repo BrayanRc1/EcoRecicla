@@ -25,9 +25,6 @@
             android:name=".pantallaregistro2_1"
             android:exported="false" />
         <activity
-            android:name=".pantallaregistro4"
-            android:exported="false" />
-        <activity
             android:name=".pantallaresiduos6"
             android:exported="false" />
         <activity
@@ -65,9 +62,6 @@
             android:exported="false" />
         <activity
             android:name=".pantallamasinfo"
-            android:exported="false" />
-        <activity
-            android:name=".pantallaregistro3"
             android:exported="false" />
         <activity
             android:name=".pantallaregistro2"

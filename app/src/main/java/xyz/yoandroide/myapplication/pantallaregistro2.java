@@ -61,7 +61,6 @@ public class pantallaregistro2 extends AppCompatActivity {
         String cantidad = editTextCantidad.getText().toString();
         String papel = spinnerPapel.getSelectedItem().toString();
         String mes = spinnerMes.getSelectedItem().toString();
-
         SharedPreferences prefs = getSharedPreferences(PREFS_NAME, MODE_PRIVATE);
         if (cantidad.isEmpty() || papel.isEmpty() || mes.isEmpty()) {
             Toast.makeText(this, "Por favor, Completar todos los campos", Toast.LENGTH_SHORT).show();

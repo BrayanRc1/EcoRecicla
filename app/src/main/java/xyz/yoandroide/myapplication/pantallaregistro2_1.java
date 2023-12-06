@@ -15,7 +15,7 @@ import androidx.appcompat.app.AppCompatActivity;
 public class pantallaregistro2_1 extends AppCompatActivity {
 
     private EditText editTextCantidad;
-    private Spinner spinnerPapel;
+    private Spinner spinnerPlastico;
     private Spinner spinnerMes;
     private Button buttonRegistrar;
     private Button btnBorrarRegistro;
@@ -31,17 +31,17 @@ public class pantallaregistro2_1 extends AppCompatActivity {
         editTextCantidad = findViewById(R.id.editTextCantidad);
         spinnerMes = findViewById(R.id.spinnerMes);
         buttonRegistrar = findViewById(R.id.btnRegistrar);
-        spinnerPapel = findViewById(R.id.spinnerPapel);
         btnBorrarRegistro = findViewById(R.id.btnBorrarRegistro);
+        spinnerPlastico =findViewById(R.id.spinnerPlastico);
 
         // Crea un ArrayAdapter por cada elemento del array
-        ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this, R.array.array_papel, android.R.layout.simple_spinner_item);
-        ArrayAdapter<CharSequence> adapter1 = ArrayAdapter.createFromResource(this, R.array.array_mes, android.R.layout.simple_spinner_item);
-        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-        adapter1.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        ArrayAdapter<CharSequence> adapterPlastico = ArrayAdapter.createFromResource(this, R.array.array_plastico, android.R.layout.simple_spinner_item);
+        ArrayAdapter<CharSequence> adapterMes = ArrayAdapter.createFromResource(this, R.array.array_mes, android.R.layout.simple_spinner_item);
+        adapterPlastico.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        adapterMes.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
 
-        spinnerPapel.setAdapter(adapter);
-        spinnerMes.setAdapter(adapter1);
+        spinnerPlastico.setAdapter(adapterPlastico);
+        spinnerMes.setAdapter(adapterMes);
 
         buttonRegistrar.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -59,11 +59,11 @@ public class pantallaregistro2_1 extends AppCompatActivity {
 
     private void registrarDatos() {
         String cantidad = editTextCantidad.getText().toString();
-        String papel = spinnerPapel.getSelectedItem().toString();
+        String plastico = spinnerPlastico.getSelectedItem().toString();
         String mes = spinnerMes.getSelectedItem().toString();
 
         SharedPreferences prefs = getSharedPreferences(PREFS_NAME, MODE_PRIVATE);
-        if (cantidad.isEmpty() || papel.isEmpty() || mes.isEmpty()) {
+        if (cantidad.isEmpty() || plastico.isEmpty() || mes.isEmpty()) {
             Toast.makeText(this, "Por favor, Completar todos los campos", Toast.LENGTH_SHORT).show();
             return;
         }
@@ -82,7 +82,7 @@ public class pantallaregistro2_1 extends AppCompatActivity {
 
             // Utilizar claves únicas para cada tipo de dato
             editor.putString("cantidad", cantidad);
-            editor.putString("papel", papel);
+            editor.putString("plastico", plastico);
             editor.putString("mes", mes);
             editor.putFloat("cantidad_" + mes, cantidadNueva);
 
