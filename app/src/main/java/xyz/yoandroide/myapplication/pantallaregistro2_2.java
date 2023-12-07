@@ -26,12 +26,13 @@ public class pantallaregistro2_2 extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_pantallaregistro2);
+        setContentView(R.layout.activity_pantallaregistro22);
 
         editTextCantidad = findViewById(R.id.editTextCantidad);
         spinnerMes = findViewById(R.id.spinnerMes);
         buttonRegistrar = findViewById(R.id.btnRegistrar);
         btnBorrarRegistro = findViewById(R.id.btnBorrarRegistro);
+        spinnerVidrio = findViewById(R.id.spinnerVidrio);
 
         // Crea un ArrayAdapter por cada elemento del array
         ArrayAdapter<CharSequence> adapterVidrio = ArrayAdapter.createFromResource(this, R.array.array_vidrio, android.R.layout.simple_spinner_item);

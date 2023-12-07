@@ -1,5 +1,6 @@
 package xyz.yoandroide.myapplication;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
@@ -23,16 +24,17 @@ public class pantallaregistro2_1 extends AppCompatActivity {
 
     private static final String PREFS_NAME = "RegistroPrefs";
 
+    @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_pantallaregistro2);
+        setContentView(R.layout.activity_pantallaregistro21);
 
         editTextCantidad = findViewById(R.id.editTextCantidad);
         spinnerMes = findViewById(R.id.spinnerMes);
         buttonRegistrar = findViewById(R.id.btnRegistrar);
         btnBorrarRegistro = findViewById(R.id.btnBorrarRegistro);
-        spinnerPlastico =findViewById(R.id.spinnerPlastico);
+        spinnerPlastico = findViewById(R.id.spinnerPlastico);
 
         // Crea un ArrayAdapter por cada elemento del array
         ArrayAdapter<CharSequence> adapterPlastico = ArrayAdapter.createFromResource(this, R.array.array_plastico, android.R.layout.simple_spinner_item);
