@@ -31,6 +31,7 @@ public class activity_pantallaregistro extends AppCompatActivity {
 
         // Referencias a los elementos de la interfaz
         TextView textTerminos = findViewById(R.id.text_terminos);
+        TextView textTratamientoDatos = findViewById(R.id.textTratamientoDatos);
         Intent pantallaPrincipal = new Intent(this, activity_pantallaprincipal.class);
         Button btnregistro = findViewById(R.id.btnregistro);
         EditText editTextNombre = findViewById(R.id.editTextNombre);
@@ -42,6 +43,14 @@ public class activity_pantallaregistro extends AppCompatActivity {
         RadioButton radioTratamientoDatos = findViewById(R.id.radioTratamientoDatos);
 
         textTerminos.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intentTerminosCondiciones = new Intent(activity_pantallaregistro.this, pantallaterminoscondiciones.class);
+                startActivity(intentTerminosCondiciones);
+            }
+        });
+
+        textTratamientoDatos.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intentTerminosCondiciones = new Intent(activity_pantallaregistro.this, pantallaterminoscondiciones.class);
@@ -129,10 +138,5 @@ public class activity_pantallaregistro extends AppCompatActivity {
     public void pantallaPrincipal(View view) {
         Intent pantallaPrincipal = new Intent(this, activity_pantallaprincipal.class);
         startActivity(pantallaPrincipal);
-    }
-
-    private void pantallaterminoscondiciones(View view) {
-        Intent pantallaterminoscondiciones = new Intent(this, pantallaterminoscondiciones.class);
-        startActivity(pantallaterminoscondiciones);
     }
 }

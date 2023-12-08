@@ -141,15 +141,23 @@
             android:orientation="horizontal">
 
             <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                android:layout_marginRight="5dp"
+                android:text="Acepto"/>
+
+            <TextView
                 android:id="@+id/text_terminos"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginRight="15dp"
                 android:autoLink="web"
-                android:text="Acepto terminos y condiciones"
+                android:text="terminos y condiciones"
                 android:textColor="@color/white"
-                android:textSize="15sp"
-                android:textStyle="bold" />
+                android:textSize="20sp"
+                android:textStyle="bold|italic"/>
 
             <RadioButton
                 android:id="@+id/radioTerminos"
@@ -168,11 +176,20 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginRight="10sp"
-                android:text="Acepto politicas de tratamiento de datos"
                 android:textColor="@color/white"
                 android:textSize="15sp"
-                android:textStyle="bold" />
+                android:layout_marginRight="5dp"
+                android:text="Acepto"/>
+
+            <TextView
+                android:id="@+id/textTratamientoDatos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10sp"
+                android:text="politicas tratamiento de datos"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold|italic" />
 
             <RadioButton
                 android:id="@+id/radioTratamientoDatos"

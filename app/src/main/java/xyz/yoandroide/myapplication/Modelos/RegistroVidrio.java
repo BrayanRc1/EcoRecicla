@@ -11,6 +11,7 @@ import xyz.yoandroide.myapplication.R;
 import xyz.yoandroide.myapplication.activity_pantallainiciosesion;
 import xyz.yoandroide.myapplication.categorias;
 import xyz.yoandroide.myapplication.pantallaestadisticapapel;
+import xyz.yoandroide.myapplication.pantallaestadisticavidrio;
 
 public class RegistroVidrio extends RegistroBase {
     @Override
@@ -86,7 +87,7 @@ public class RegistroVidrio extends RegistroBase {
 
     //Botton estadistica nos lleva a pantalla estadistica
     public void pantallaEstadistica(View view) {
-        Intent pantallaEstadistica = new Intent(this, pantallaestadisticapapel.class);
+        Intent pantallaEstadistica = new Intent(this, pantallaestadisticavidrio.class);
         startActivity(pantallaEstadistica);
     }
 }

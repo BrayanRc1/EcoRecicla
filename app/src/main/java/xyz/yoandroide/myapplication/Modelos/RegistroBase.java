@@ -8,6 +8,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.Toast;
+import android.util.Log;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -98,6 +99,9 @@ public class RegistroBase extends AppCompatActivity {
 
             // Aplicar los cambios
             editor.apply();
+
+            Log.d("RegistroBase", "Cantidad anterior: " + cantidadAnterior);
+            Log.d("RegistroBase", "Cantidad nueva: " + cantidadNueva);
 
         } catch (NumberFormatException e) {
             // Manejar error si no se puede convertir a un número
