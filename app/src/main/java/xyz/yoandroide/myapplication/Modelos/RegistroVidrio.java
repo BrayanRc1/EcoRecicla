@@ -21,7 +21,6 @@ public class RegistroVidrio extends RegistroBase {
         adapterMaterial.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         spinnerMaterial.setAdapter(adapterMaterial);
     }
-
     @Override
     protected void registrarDatos() {
         // Acceder a los elementos de la interfaz ya configurados en RegistroBase
@@ -64,19 +63,15 @@ public class RegistroVidrio extends RegistroBase {
             Toast.makeText(this, "Ingrese una cantidad válida", Toast.LENGTH_SHORT).show();
         }
 
-        // Puedes agregar lógica adicional específica para el registro de vidrio aquí
-
-        // Llama al método de la clase base para la lógica común
         super.registrarDatos();
     }
 
     @Override
     protected void btnBorrarRegistro() {
-        // Puedes personalizar la lógica para borrar registros de vidrio si es necesario
 
-        // Llama al método de la clase base para la lógica común
         super.btnBorrarRegistro();
     }
+
     //Boton Inicio nos lleva a pantalla de la sesión iniciada
     public void pantallaSesionIniciada(View view) {
         Intent pantallaSesionIniciada = new Intent(this, activity_pantallainiciosesion.class);

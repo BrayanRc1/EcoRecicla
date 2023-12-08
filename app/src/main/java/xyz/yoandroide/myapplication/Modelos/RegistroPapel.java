@@ -23,7 +23,6 @@ public class RegistroPapel extends RegistroBase {
         adapterMaterial.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         spinnerMaterial.setAdapter(adapterMaterial);
     }
-
     @Override
     protected void registrarDatos() {
         // Acceder a los elementos de la interfaz ya configurados en RegistroBase
@@ -66,31 +65,25 @@ public class RegistroPapel extends RegistroBase {
             Toast.makeText(this, "Ingrese una cantidad válida", Toast.LENGTH_SHORT).show();
         }
 
-        // Puedes agregar lógica adicional específica para el registro de papel aquí
-
-        // Llama al método de la clase base para la lógica común
         super.registrarDatos();
     }
 
     @Override
     protected void btnBorrarRegistro() {
-        // Puedes personalizar la lógica para borrar registros de papel si es necesario
 
-        // Llama al método de la clase base para la lógica común
         super.btnBorrarRegistro();
     }
-    //Boton Inicio nos lleva a pantalla de la sesión iniciada
+
+    //Boton Inicio nos lleva a pantalla de la seseón iniciada
     public void pantallaSesionIniciada(View view) {
         Intent pantallaSesionIniciada = new Intent(this, activity_pantallainiciosesion.class);
         startActivity(pantallaSesionIniciada);
     }
-
     //Boton atras nos lleva a pantalla categorias
     public void pantallaCategoria(View view) {
         Intent pantallaCategoria = new Intent(this, categorias.class);
         startActivity(pantallaCategoria);
     }
-
     //Botton estadistica nos lleva a pantalla estadistica
     public void pantallaEstadistica(View view) {
         Intent pantallaEstadistica = new Intent(this, pantallaestadisticapapel.class);

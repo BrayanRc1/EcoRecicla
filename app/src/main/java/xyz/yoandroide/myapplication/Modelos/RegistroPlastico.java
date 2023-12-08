@@ -31,7 +31,6 @@ public class RegistroPlastico extends RegistroBase {
         String mes = spinnerMes.getSelectedItem().toString();
         SharedPreferences prefs = getSharedPreferences(PREFS_NAME_PLASTICO, MODE_PRIVATE);
 
-
         // Verificar si los campos están vacíos
         if (cantidad.isEmpty() || plastico.isEmpty() || mes.isEmpty()) {
             Toast.makeText(this, "Por favor, completar todos los campos", Toast.LENGTH_SHORT).show();
@@ -65,20 +64,14 @@ public class RegistroPlastico extends RegistroBase {
             // Manejar error si no se puede convertir a un número
             Toast.makeText(this, "Ingrese una cantidad válida", Toast.LENGTH_SHORT).show();
         }
-
-        // Puedes agregar lógica adicional específica para el registro de plastico aquí
-
-        // Llama al método de la clase base para la lógica común
         super.registrarDatos();
     }
 
     @Override
     protected void btnBorrarRegistro() {
-        // Puedes personalizar la lógica para borrar registros de plastico si es necesario
-
-        // Llama al método de la clase base para la lógica común
         super.btnBorrarRegistro();
     }
+
     //Boton Inicio nos lleva a pantalla de la sesión iniciada
     public void pantallaSesionIniciada(View view) {
         Intent pantallaSesionIniciada = new Intent(this, activity_pantallainiciosesion.class);
