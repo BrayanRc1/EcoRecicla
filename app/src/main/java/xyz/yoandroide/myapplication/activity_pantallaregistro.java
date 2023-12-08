@@ -1,14 +1,15 @@
 package xyz.yoandroide.myapplication;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.RadioButton;
+import android.widget.TextView;
 import android.widget.Toast;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
@@ -29,6 +30,7 @@ public class activity_pantallaregistro extends AppCompatActivity {
         setContentView(R.layout.activity_pantallaregistro);
 
         // Referencias a los elementos de la interfaz
+        TextView textTerminos = findViewById(R.id.text_terminos);
         Intent pantallaPrincipal = new Intent(this, activity_pantallaprincipal.class);
         Button btnregistro = findViewById(R.id.btnregistro);
         EditText editTextNombre = findViewById(R.id.editTextNombre);
@@ -38,6 +40,14 @@ public class activity_pantallaregistro extends AppCompatActivity {
         EditText editTextCorreoElectronico = findViewById(R.id.editTextCorreoElectronico);
         RadioButton radioTerminos = findViewById(R.id.radioTerminos);
         RadioButton radioTratamientoDatos = findViewById(R.id.radioTratamientoDatos);
+
+        textTerminos.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intentTerminosCondiciones = new Intent(activity_pantallaregistro.this, pantallaterminoscondiciones.class);
+                startActivity(intentTerminosCondiciones);
+            }
+        });
 
         //Codigo para boton del registro
         btnregistro.setOnClickListener(new View.OnClickListener() {
@@ -83,7 +93,7 @@ public class activity_pantallaregistro extends AppCompatActivity {
             List<String> existingApellido = new ArrayList<>();
             List<String> existingNombre = new ArrayList<>();
 
-            while ((line = bufferedReader.readLine())!= null){
+            while ((line = bufferedReader.readLine()) != null) {
                 String[] data = line.split(",");
                 existingCorreoElectronico.add(data[2]);
                 existingApellido.add(data[1]);
@@ -100,6 +110,7 @@ public class activity_pantallaregistro extends AppCompatActivity {
 
         return false;
     }
+
     private void guardarRegistro(Usuarios nuevoUsuario) {
         File file = new File(getFilesDir(), "Datos.txt");
 
@@ -115,9 +126,13 @@ public class activity_pantallaregistro extends AppCompatActivity {
         }
     }
 
-    public void pantallaPrincipal(View view){
+    public void pantallaPrincipal(View view) {
         Intent pantallaPrincipal = new Intent(this, activity_pantallaprincipal.class);
         startActivity(pantallaPrincipal);
     }
 
+    private void pantallaterminoscondiciones(View view) {
+        Intent pantallaterminoscondiciones = new Intent(this, pantallaterminoscondiciones.class);
+        startActivity(pantallaterminoscondiciones);
+    }
 }

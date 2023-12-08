@@ -13,6 +13,9 @@
         android:theme="@style/Theme.MyApplication"
         tools:targetApi="31">
         <activity
+            android:name=".pantallaterminoscondiciones"
+            android:exported="false" />
+        <activity
             android:name=".Modelos.RegistroVidrio"
             android:exported="false" />
         <activity
@@ -111,7 +114,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="xyz.yoandroide.myapplication.Modelos.RegistroBase" />
+        <activity android:name=".Modelos.RegistroBase" />
     </application>
 
 </manifest>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo_principal2"
+    tools:context=".pantallaterminoscondiciones">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="10dp"/>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="300dp"
+            android:layout_height="70dp"
+            android:backgroundTint="#ADCA96"
+            app:cardCornerRadius="30dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5sp"
+                android:text="Términos y tratamiento de datos"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="25dp" />
+        </androidx.cardview.widget.CardView>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="30dp"/>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="380dp"
+            android:layout_height="400dp"
+            android:backgroundTint="#FFB5B5B5"
+            app:cardCornerRadius="30dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5sp"
+                android:text="Primera: Aceptación de los Términos Y Condiciones.\n
+                Los presentes Términos y Condiciones rigen las condiciones de uso del Botón Reciclaje. El uso del Botón Reciclaje por parte del Usuario/Consumidor implica el conocimiento y la aceptación total de los presentes Términos y Condiciones. \nSegunda: Uso de la Aplicación. La aplicación se proporciona para facilitar la información sobre reciclaje y la ubicación de centros de reciclaje. No nos hacemos responsables por el uso incorrecto de la información proporcionada."
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="20dp" />
+        </androidx.cardview.widget.CardView>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="30dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/btnpprincipal"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#E69393"
+                android:gravity="center"
+                android:onClick="pantallaPrincipal"
+                android:text="Inicio"
+                android:textSize="20dp"
+                android:textColor="@color/black" />
+
+            <Space
+                android:layout_width="50dp"
+                android:layout_height="0dp"/>
+
+            <Button
+                android:id="@+id/btnRegistrar"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#E69393"
+                android:onClick="pantallaregistro"
+                android:text="Atras"
+                android:textSize="20dp"
+                android:textColor="@color/black"/>
+        </LinearLayout>
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

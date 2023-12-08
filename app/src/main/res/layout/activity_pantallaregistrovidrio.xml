@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/fondo_principal2"
-    tools:context=".pantallaregistro2_2">
+    tools:context=".Modelos.RegistroVidrio">
 
     <LinearLayout
         android:id="@+id/linearLayout4"
@@ -31,6 +31,7 @@
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:layout_marginBottom="16dp"
+            android:backgroundTint="#7B9665"
             android:background="@color/hueso"
             android:hint="Cantidad de material reciclado (kg)"
             android:inputType="numberDecimal" />
@@ -39,6 +40,7 @@
             android:layout_width="match_parent"
             android:layout_height="55dp"
             android:layout_marginBottom="16dp"
+            android:backgroundTint="#7B9665"
             android:background="@color/hueso"
             android:visibility="visible"/>
         <Spinner
@@ -46,6 +48,7 @@
             android:layout_width="match_parent"
             android:layout_height="55dp"
             android:layout_marginBottom="16dp"
+            android:backgroundTint="#7B9665"
             android:background="@color/hueso"
             android:hint="Seleccione Mes" />
         <Button
@@ -56,7 +59,7 @@
             android:text="Registrar"
             android:textColor="@color/black"
             android:textSize="25dp"
-            android:backgroundTint="@color/hueso"/>
+            android:backgroundTint="#C8E0B4"/>
         <Button
             android:id="@+id/btnBorrarRegistro"
             android:layout_width="match_parent"
@@ -65,7 +68,7 @@
             android:text="Borrar registros"
             android:textColor="@color/black"
             android:textSize="25dp"
-            android:backgroundTint="@color/hueso"/>
+            android:backgroundTint="#C8E0B4"/>
     </LinearLayout>
 
     <LinearLayout
@@ -82,7 +85,7 @@
         <Button
             android:layout_width="160dp"
             android:layout_height="wrap_content"
-            android:backgroundTint="@color/hueso"
+            android:backgroundTint="#7B9665"
             android:text="Atras"
             android:onClick="pantallaCategoria"
             android:layout_marginRight="5dp"
@@ -93,7 +96,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="5dp"
-            android:backgroundTint="@color/hueso"
+            android:backgroundTint="#7B9665"
             android:onClick="pantallaEstadistica"
             android:text="Estadistica"
             android:textColor="@color/black"
