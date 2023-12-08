@@ -2,14 +2,25 @@ package xyz.yoandroide.myapplication.Modelos;
 
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.os.Bundle;
 import android.view.View;
+import android.widget.ArrayAdapter;
 import android.widget.Toast;
 
+import xyz.yoandroide.myapplication.R;
 import xyz.yoandroide.myapplication.activity_pantallainiciosesion;
 import xyz.yoandroide.myapplication.categorias;
-import xyz.yoandroide.myapplication.pantallaestadistica;
+import xyz.yoandroide.myapplication.pantallaestadisticapapel;
 
 public class RegistroVidrio extends RegistroBase {
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        // Crea un ArrayAdapter por cada elemento del array
+        ArrayAdapter<CharSequence> adapterMaterial = ArrayAdapter.createFromResource(this, R.array.array_vidrio, android.R.layout.simple_spinner_item);
+        adapterMaterial.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        spinnerMaterial.setAdapter(adapterMaterial);
+    }
 
     @Override
     protected void registrarDatos() {
@@ -80,7 +91,7 @@ public class RegistroVidrio extends RegistroBase {
 
     //Botton estadistica nos lleva a pantalla estadistica
     public void pantallaEstadistica(View view) {
-        Intent pantallaEstadistica = new Intent(this, pantallaestadistica.class);
+        Intent pantallaEstadistica = new Intent(this, pantallaestadisticapapel.class);
         startActivity(pantallaEstadistica);
     }
 }

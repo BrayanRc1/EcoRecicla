@@ -23,7 +23,7 @@ public class activity_pantallainiciosesion extends AppCompatActivity {
         startActivity(pantallaCategoria);
     }
     public void pantallaEstadistica(View view){
-        Intent pantallaEstadistica = new Intent(this,pantallaestadistica.class);
+        Intent pantallaEstadistica = new Intent(this, pantallaestadisticapapel.class);
         startActivity(pantallaEstadistica);
     }
     public void pantallaConsejos(View view){

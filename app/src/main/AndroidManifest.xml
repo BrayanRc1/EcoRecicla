@@ -22,10 +22,10 @@
             android:name=".Modelos.RegistroPapel"
             android:exported="false" />
         <activity
-            android:name=".pantallaestadistica2_2"
+            android:name=".pantallaestadisticavidrio"
             android:exported="false" />
         <activity
-            android:name=".pantallaestadistica2_1"
+            android:name=".pantallaestadisticaplastico"
             android:exported="false" />
         <activity
             android:name=".pantallaresiduos6"
@@ -85,7 +85,7 @@
             android:name=".recomendaciones"
             android:exported="false" />
         <activity
-            android:name=".pantallaestadistica"
+            android:name=".pantallaestadisticapapel"
             android:exported="false" />
         <activity
             android:name=".categorias"

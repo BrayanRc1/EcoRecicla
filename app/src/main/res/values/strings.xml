@@ -1,5 +1,4 @@
 <resources>
     <string name="app_name">EcoRecicla</string>
     <string name="en_el_c_digo_universal_el_verde_sirve_para_vidrio_el_amarillo_para_los_pl_sticos_el_rojo_para_tetra_brik_o_tetrapak_el_gris_para_latas_y_metales_el_azul_para_papel_y_el_blanco_para_materias_org_nicas_los_desechos_electr_nicos_y_las_bombillas_col_calos_en_otros_recipientes_a_su_elecci_n">En el código universal: el verde sirve para vidrio, el amarillo para los plásticos, el rojo para tetra brik o tetrapak, el gris para latas y metales, el azul para papel y el blanco para materias orgánicas. Los desechos electrónicos y las bombillas colócalos en otros recipientes a su elección.</string>
-    <string name="tu_referencia_aqui">Selecciona el tipo de material</string>
 </resources>

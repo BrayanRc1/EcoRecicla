@@ -27,7 +27,7 @@ public class RegistroBase extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_pantallaregistro2);
+        setContentView(R.layout.activity_pantallaregistropapel);
 
         editTextCantidad = findViewById(R.id.editTextCantidad);
         spinnerMes = findViewById(R.id.spinnerMes);
@@ -36,12 +36,8 @@ public class RegistroBase extends AppCompatActivity {
         btnBorrarRegistro = findViewById(R.id.btnBorrarRegistro);
 
         // Crea un ArrayAdapter por cada elemento del array
-        ArrayAdapter<CharSequence> adapterMaterial = ArrayAdapter.createFromResource(this, R.array.array_papel, android.R.layout.simple_spinner_item);
         ArrayAdapter<CharSequence> adapterMes = ArrayAdapter.createFromResource(this, R.array.array_mes, android.R.layout.simple_spinner_item);
-        adapterMaterial.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         adapterMes.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-
-        spinnerMaterial.setAdapter(adapterMaterial);
         spinnerMes.setAdapter(adapterMes);
 
         buttonRegistrar.setOnClickListener(new View.OnClickListener() {
@@ -71,8 +67,9 @@ public class RegistroBase extends AppCompatActivity {
         try {
             // Convertir la cantidad a un número decimal
             double cantidadReciclada = Double.parseDouble(cantidad);
-            // cantidad anterior del mes
+
             // Obtener el objeto SharedPreferences correspondiente al tipo de material
+
             SharedPreferences prefs;
             if ("Papel".equals(material)) {
                 prefs = getSharedPreferences(PREFS_NAME_PAPEL, MODE_PRIVATE);
@@ -85,6 +82,7 @@ public class RegistroBase extends AppCompatActivity {
                 Toast.makeText(this, "Tipo de material desconocido", Toast.LENGTH_SHORT).show();
                 return;
             }
+            // cantidad anterior del mes
             float cantidadAnterior = prefs.getFloat("cantidad_" + mes, 0f);
             // Suma de las cantidades
             float cantidadNueva = cantidadAnterior + (float) cantidadReciclada;

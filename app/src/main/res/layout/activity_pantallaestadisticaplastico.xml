@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@drawable/fondo_principal2"
     android:orientation="vertical"
-    tools:context=".pantallaestadistica2_1">
+    tools:context=".pantallaestadisticaplastico">
 
     <LinearLayout
         android:id="@+id/linearLayout2"

@@ -17,13 +17,13 @@ import com.github.mikephil.charting.formatter.IndexAxisValueFormatter;
 
 import java.util.ArrayList;
 
-public class pantallaestadistica extends AppCompatActivity {
+public class pantallaestadisticaplastico extends AppCompatActivity {
     private BarChart barChart;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_pantallaestadistica);
+        setContentView(R.layout.activity_pantallaestadisticaplastico);
 
         barChart = findViewById(R.id.barChart);
         cargarYMostrarDatos();
@@ -35,20 +35,20 @@ public class pantallaestadistica extends AppCompatActivity {
 
     private void cargarYMostrarDatos() {
 
-        SharedPreferences prefs = getSharedPreferences("RegistroPrefs", MODE_PRIVATE);
+        SharedPreferences prefsPlastico = getSharedPreferences("RegistroPrefsPlastico", MODE_PRIVATE);
 
-        Float cantidadEnero = obtenerCantidadParaMes(prefs, "Enero");
-        Float cantidadFebrero = obtenerCantidadParaMes(prefs, "Febrero");
-        Float cantidadMarzo = obtenerCantidadParaMes(prefs, "Marzo");
-        Float cantidadAbril = obtenerCantidadParaMes(prefs, "Abril");
-        Float cantidadMayo = obtenerCantidadParaMes(prefs, "Mayo");
-        Float cantidadJunio = obtenerCantidadParaMes(prefs, "Junio");
-        Float cantidadJulio = obtenerCantidadParaMes(prefs, "Julio");
-        Float cantidadAgosto = obtenerCantidadParaMes(prefs, "Agosto");
-        Float cantidadSeptiembre = obtenerCantidadParaMes(prefs, "Septiembre");
-        Float cantidadOctubre = obtenerCantidadParaMes(prefs, "Octubre");
-        Float cantidadNoviembre = obtenerCantidadParaMes(prefs, "Noviembre");
-        Float cantidadDiciembre = obtenerCantidadParaMes(prefs, "Diciembre");
+        Float cantidadEnero = obtenerCantidadParaMes(prefsPlastico, "Enero");
+        Float cantidadFebrero = obtenerCantidadParaMes(prefsPlastico, "Febrero");
+        Float cantidadMarzo = obtenerCantidadParaMes(prefsPlastico, "Marzo");
+        Float cantidadAbril = obtenerCantidadParaMes(prefsPlastico, "Abril");
+        Float cantidadMayo = obtenerCantidadParaMes(prefsPlastico, "Mayo");
+        Float cantidadJunio = obtenerCantidadParaMes(prefsPlastico, "Junio");
+        Float cantidadJulio = obtenerCantidadParaMes(prefsPlastico, "Julio");
+        Float cantidadAgosto = obtenerCantidadParaMes(prefsPlastico, "Agosto");
+        Float cantidadSeptiembre = obtenerCantidadParaMes(prefsPlastico, "Septiembre");
+        Float cantidadOctubre = obtenerCantidadParaMes(prefsPlastico, "Octubre");
+        Float cantidadNoviembre = obtenerCantidadParaMes(prefsPlastico, "Noviembre");
+        Float cantidadDiciembre = obtenerCantidadParaMes(prefsPlastico, "Diciembre");
 
         ArrayList<BarEntry> entries = new ArrayList<>();
         entries.add(new BarEntry(0, (cantidadEnero)));

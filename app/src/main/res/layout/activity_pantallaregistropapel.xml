@@ -40,7 +40,6 @@
             android:layout_height="55dp"
             android:layout_marginBottom="16dp"
             android:background="@color/hueso"
-            android:prompt="@string/tu_referencia_aqui"
             android:visibility="visible"/>
         <Spinner
             android:id="@+id/spinnerMes"

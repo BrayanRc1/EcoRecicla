@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/fondo_principal2"
-    tools:context=".pantallaregistro2_1">
+    tools:context=".pantallaregistro2_2">
 
     <LinearLayout
         android:id="@+id/linearLayout4"
@@ -35,12 +35,11 @@
             android:hint="Cantidad de material reciclado (kg)"
             android:inputType="numberDecimal" />
         <Spinner
-            android:id="@+id/spinnerPlastico"
+            android:id="@+id/spinnerVidrio"
             android:layout_width="match_parent"
             android:layout_height="55dp"
             android:layout_marginBottom="16dp"
             android:background="@color/hueso"
-            android:prompt="@string/tu_referencia_aqui"
             android:visibility="visible"/>
         <Spinner
             android:id="@+id/spinnerMes"
