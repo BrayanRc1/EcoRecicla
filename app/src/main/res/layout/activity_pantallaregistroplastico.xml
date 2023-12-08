@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/fondo_principal2"
-    tools:context=".Modelos.RegistroPlastico">
+    tools:context=".pantallaregistroplastico">
 
     <LinearLayout
         android:id="@+id/linearLayout4"
@@ -22,7 +22,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:layout_marginBottom="16dp"
-            android:text="Registro de Reciclaje"
+            android:text="Registro de Reciclaje del Plastico"
             android:textColor="@color/white"
             android:textSize="20sp"
             android:textStyle="bold" />
@@ -97,7 +97,7 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="5dp"
             android:backgroundTint="#BBB5B5"
-            android:onClick="pantallaEstadistica"
+            android:onClick="pantallaEstadisticaplastico"
             android:text="Estadistica"
             android:textColor="@color/black"
             android:textSize="25sp" />

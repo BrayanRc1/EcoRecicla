@@ -5,59 +5,47 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/fondo_principal2"
-    tools:context=".activity_pantallainiciosesion">
+    tools:context=".pantallaestadisticageneral">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:gravity="center"
         android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
 
         <androidx.cardview.widget.CardView
             android:layout_width="200dp"
             android:layout_height="90dp"
-            android:layout_marginLeft="110dp"
-            android:layout_marginTop="50dp"
             android:backgroundTint="#ADCA96"
             app:cardCornerRadius="30dp">
-
             <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Pantalla principal"
-                android:layout_marginLeft="40dp"
+                android:layout_width="183dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="10dp"
+                android:text="Estadisticas Generales"
+                android:textAlignment="center"
                 android:textColor="@color/black"
                 android:textSize="30dp"
                 android:textStyle="bold" />
         </androidx.cardview.widget.CardView>
-
-        <androidx.cardview.widget.CardView
-            android:layout_width="250dp"
-            android:layout_height="60dp"
-            android:layout_marginLeft="90dp"
-            android:layout_marginTop="50dp"
-            android:backgroundTint="#D9D9D9">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:text="EcoRecicla"
-                android:textColor="@color/black"
-                android:textSize="40dp"
-                android:textStyle="bold" />
-        </androidx.cardview.widget.CardView>
+        </LinearLayout>
 
         <LinearLayout
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="30dp"
+            android:layout_marginTop="50dp"
+            android:gravity="center"
             android:orientation="horizontal">
 
             <androidx.cardview.widget.CardView
                 android:layout_width="180dp"
                 android:layout_height="200dp"
-                android:layout_marginLeft="20dp"
-                android:layout_marginTop="20dp"
                 app:cardCornerRadius="15dp">
 
                 <ImageButton
@@ -66,9 +54,9 @@
                     android:layout_marginLeft="-5dp"
                     android:layout_marginTop="-5dp"
                     android:contentDescription="imgcategoria"
-                    android:onClick="pantallaCategoria"
+                    android:onClick="pantallaEstadisticapapel"
                     android:scaleType="centerCrop"
-                    android:src="@drawable/imgcategotia" />
+                    android:src="@drawable/imgpapel" />
 
             </androidx.cardview.widget.CardView>
 
@@ -76,7 +64,6 @@
                 android:layout_width="180dp"
                 android:layout_height="200dp"
                 android:layout_marginLeft="15dp"
-                android:layout_marginTop="20dp"
                 app:cardCornerRadius="15dp">
 
                 <ImageButton
@@ -85,8 +72,8 @@
                     android:layout_marginLeft="-5dp"
                     android:layout_marginTop="-5dp"
                     android:scaleType="centerCrop"
-                    android:src="@drawable/imgestadistica"
-                    android:onClick="pantallaestadisticageneral"
+                    android:src="@drawable/imgplastico"
+                    android:onClick="pantallaEstadisticaplastico"
                     android:contentDescription="imgestadistica" />
 
             </androidx.cardview.widget.CardView>
@@ -94,69 +81,60 @@
         </LinearLayout>
 
         <LinearLayout
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="30dp"
             android:orientation="horizontal">
 
             <androidx.cardview.widget.CardView
-                android:layout_width="180dp"
-                android:layout_height="200dp"
-                android:layout_marginLeft="20dp"
+                android:layout_width="190dp"
+                android:layout_height="190dp"
+                android:layout_marginLeft="120dp"
                 android:layout_marginTop="20dp"
                 app:cardCornerRadius="15dp">
 
                 <ImageButton
-                    android:layout_width="190dp"
+                    android:layout_width="180dp"
                     android:layout_height="210dp"
                     android:layout_marginLeft="-5dp"
+                    android:layout_gravity="center"
                     android:layout_marginTop="-5dp"
                     android:scaleType="centerCrop"
-                    android:src="@drawable/imgconsejos"
-                    android:onClick="pantallaConsejos"
+                    android:src="@drawable/imgvidrio"
+                    android:onClick="pantallaEstadisticavidrio"
                     android:contentDescription="imgconsejos" />
-
-            </androidx.cardview.widget.CardView>
-
-            <androidx.cardview.widget.CardView
-                android:layout_width="180dp"
-                android:layout_height="200dp"
-                android:layout_marginLeft="15dp"
-                android:layout_marginTop="20dp"
-                app:cardCornerRadius="15dp">
-
-                <ImageButton
-                    android:layout_width="190dp"
-                    android:layout_height="210dp"
-                    android:layout_marginLeft="-5dp"
-                    android:layout_marginTop="-5dp"
-                    android:scaleType="centerCrop"
-                    android:src="@drawable/imgmasinfo"
-                    android:onClick="pantallaMasinfo"
-                    android:contentDescription="imgmasinfo" />
 
             </androidx.cardview.widget.CardView>
 
         </LinearLayout>
         <LinearLayout
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:layout_marginTop="50dp"
+            android:gravity="center"
+            android:orientation="horizontal">
             <Button
-                android:layout_width="wrap_content"
+                android:layout_width="180dp"
                 android:layout_height="wrap_content"
-                android:text="Cerrar Sesión"
-                android:layout_marginTop="15dp"
+                android:text="Atras"
+                android:textSize="25dp"
                 android:backgroundTint="@color/rojo"
                 android:textColor="@color/black"
                 android:textStyle="bold"
-                android:onClick="pantallaPrincipal"
-                android:layout_marginLeft="140dp"/>
-
+                android:onClick="pantallaSesionIniciada"/>
+            <Button
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:text="Registro"
+                android:textSize="25dp"
+                android:layout_marginLeft="10dp"
+                android:backgroundTint="@color/rojo"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:onClick="pantallaCategoria"/>
 
         </LinearLayout>
 
     </LinearLayout>
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>

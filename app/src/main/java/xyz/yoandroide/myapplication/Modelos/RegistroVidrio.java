@@ -10,7 +10,6 @@ import android.widget.Toast;
 import xyz.yoandroide.myapplication.R;
 import xyz.yoandroide.myapplication.activity_pantallainiciosesion;
 import xyz.yoandroide.myapplication.categorias;
-import xyz.yoandroide.myapplication.pantallaestadisticapapel;
 import xyz.yoandroide.myapplication.pantallaestadisticavidrio;
 
 public class RegistroVidrio extends RegistroBase {
@@ -86,8 +85,8 @@ public class RegistroVidrio extends RegistroBase {
     }
 
     //Botton estadistica nos lleva a pantalla estadistica
-    public void pantallaEstadistica(View view) {
-        Intent pantallaEstadistica = new Intent(this, pantallaestadisticavidrio.class);
-        startActivity(pantallaEstadistica);
+    public void pantallaEstadisticavidrio(View view) {
+        Intent pantallaEstadisticavidrio = new Intent(this, pantallaestadisticavidrio.class);
+        startActivity(pantallaEstadisticavidrio);
     }
 }

@@ -96,5 +96,9 @@ public class pantallaestadisticaplastico extends AppCompatActivity {
         Intent pantallaCategoria = new Intent(this, categorias.class);
         startActivity(pantallaCategoria);
     }
+    public void pantallaestadisticageneral(View view){
+        Intent pantallaestadisticageneral = new Intent(this, pantallaestadisticageneral.class);
+        startActivity(pantallaestadisticageneral);
+    }
 
 }

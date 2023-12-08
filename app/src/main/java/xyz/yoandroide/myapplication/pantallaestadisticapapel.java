@@ -14,6 +14,7 @@ import com.github.mikephil.charting.data.BarData;
 import com.github.mikephil.charting.data.BarDataSet;
 import com.github.mikephil.charting.data.BarEntry;
 import com.github.mikephil.charting.formatter.IndexAxisValueFormatter;
+import xyz.yoandroide.myapplication.Modelos.RegistroPapel;
 
 import java.util.ArrayList;
 
@@ -95,6 +96,10 @@ public class pantallaestadisticapapel extends AppCompatActivity {
     public void pantallaCategoria(View view) {
         Intent pantallaCategoria = new Intent(this, categorias.class);
         startActivity(pantallaCategoria);
+    }
+    public void pantallaregistropapel(View view){
+        Intent pantallaregistropapel = new Intent(this, xyz.yoandroide.myapplication.Modelos.RegistroPapel.class);
+        startActivity(pantallaregistropapel);
     }
 
 }

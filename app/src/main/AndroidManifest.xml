@@ -13,6 +13,18 @@
         android:theme="@style/Theme.MyApplication"
         tools:targetApi="31">
         <activity
+            android:name=".pantallaestadisticageneral"
+            android:exported="false" />
+        <activity
+            android:name=".pantallaregistroplastico"
+            android:exported="false" />
+        <activity
+            android:name=".pantallaregistropapel"
+            android:exported="false" />
+        <activity
+            android:name=".pantallaregistrovidrio"
+            android:exported="false" />
+        <activity
             android:name=".pantallaterminoscondiciones"
             android:exported="false" />
         <activity

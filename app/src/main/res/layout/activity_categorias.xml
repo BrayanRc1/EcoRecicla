@@ -74,7 +74,7 @@
                     android:layout_marginLeft="-10dp"
                     android:layout_marginTop="-5dp"
                     android:contentDescription="imgcategoria"
-                    android:onClick="RegistroPlastico"
+                    android:onClick=""
                     android:scaleType="centerCrop"
                     android:src="@drawable/imgplastico" />
 
@@ -99,7 +99,7 @@
                     android:layout_marginLeft="-10dp"
                     android:layout_marginTop="-5dp"
                     android:contentDescription="imgcategoria"
-                    android:onClick="RegistroVidrio"
+                    android:onClick=""
                     android:scaleType="centerCrop"
                     android:src="@drawable/imgvidrio" />
 

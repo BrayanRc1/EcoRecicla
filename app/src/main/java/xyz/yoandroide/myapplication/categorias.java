@@ -6,10 +6,6 @@ import android.view.View;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import xyz.yoandroide.myapplication.Modelos.RegistroPapel;
-import xyz.yoandroide.myapplication.Modelos.RegistroPlastico;
-import xyz.yoandroide.myapplication.Modelos.RegistroVidrio;
-
 public class categorias extends AppCompatActivity {
 
     @Override
@@ -20,17 +16,17 @@ public class categorias extends AppCompatActivity {
     }
     //Cambio de activity a Registro Papel
     public void RegistroPapel(View view){
-        Intent RegistroPapel = new Intent(this, RegistroPapel.class);
+        Intent RegistroPapel = new Intent(this, pantallaregistropapel.class);
         startActivity(RegistroPapel);
     }
     //Cambio de activity a Registro Plastico
     public void RegistroPlastico(View view){
-        Intent RegistroPlastico = new Intent(this, RegistroPlastico.class);
+        Intent RegistroPlastico = new Intent(this, pantallaregistroplastico.class);
         startActivity(RegistroPlastico);
     }
     //Cambio de activity a Registro Vidrio
     public void RegistroVidrio(View view){
-        Intent RegistroVidrio = new Intent(this, RegistroVidrio.class);
+        Intent RegistroVidrio = new Intent(this, pantallaregistrovidrio.class);
         startActivity(RegistroVidrio);
     }
     //Cambio de activity a Sesion iniciada
