@@ -13,16 +13,19 @@
         android:theme="@style/Theme.MyApplication"
         tools:targetApi="31">
         <activity
-            android:name=".pantallaregistro2_2"
+            android:name=".Modelos.RegistroVidrio"
+            android:exported="false" />
+        <activity
+            android:name=".Modelos.RegistroPlastico"
+            android:exported="false" />
+        <activity
+            android:name=".Modelos.RegistroPapel"
             android:exported="false" />
         <activity
             android:name=".pantallaestadistica2_2"
             android:exported="false" />
         <activity
             android:name=".pantallaestadistica2_1"
-            android:exported="false" />
-        <activity
-            android:name=".pantallaregistro2_1"
             android:exported="false" />
         <activity
             android:name=".pantallaresiduos6"
@@ -62,9 +65,6 @@
             android:exported="false" />
         <activity
             android:name=".pantallamasinfo"
-            android:exported="false" />
-        <activity
-            android:name=".pantallaregistro2"
             android:exported="false" />
         <activity
             android:name=".pantallaresiduos"
@@ -111,6 +111,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name="xyz.yoandroide.myapplication.Modelos.RegistroBase" />
     </application>
 
 </manifest>
