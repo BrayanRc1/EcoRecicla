@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <array name="array_papel">
-        <item>Seleccionar</item>
+        <item>Seleccionar material</item>
         <item>Papel</item>
     </array>
     <array name="array_plastico">
-        <item>Seleccionar</item>
+        <item>Seleccionar material</item>
         <item>Plástico</item>
     </array>
     <array name="array_vidrio">
-        <item>Seleccionar</item>
+        <item>Seleccionar material</item>
         <item>Vidrio</item>
     </array>
 

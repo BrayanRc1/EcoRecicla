@@ -4,13 +4,14 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Adapter;
 import android.widget.ArrayAdapter;
 import android.widget.Toast;
 
 import xyz.yoandroide.myapplication.R;
 import xyz.yoandroide.myapplication.activity_pantallainiciosesion;
-import xyz.yoandroide.myapplication.pantallaestadisticaplastico;
 import xyz.yoandroide.myapplication.categorias;
+import xyz.yoandroide.myapplication.pantallaestadisticaplastico;
 
 public class RegistroPlastico extends RegistroBase {
     @Override

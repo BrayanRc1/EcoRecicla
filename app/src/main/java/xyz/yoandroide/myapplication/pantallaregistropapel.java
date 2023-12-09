@@ -13,7 +13,6 @@ public class pantallaregistropapel extends RegistroBase {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_pantallaregistropapel);
     }
-
     public void pantallaCategoria(View view) {
         Intent pantallaCategoria = new Intent(this, categorias.class);
         startActivity(pantallaCategoria);

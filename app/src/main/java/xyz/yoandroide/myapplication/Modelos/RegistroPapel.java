@@ -4,7 +4,6 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Adapter;
 import android.widget.ArrayAdapter;
 import android.widget.Toast;
 
@@ -14,7 +13,6 @@ import xyz.yoandroide.myapplication.categorias;
 import xyz.yoandroide.myapplication.pantallaestadisticapapel;
 
 public class RegistroPapel extends RegistroBase {
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

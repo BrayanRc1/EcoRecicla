@@ -14,7 +14,6 @@ import com.github.mikephil.charting.data.BarData;
 import com.github.mikephil.charting.data.BarDataSet;
 import com.github.mikephil.charting.data.BarEntry;
 import com.github.mikephil.charting.formatter.IndexAxisValueFormatter;
-import xyz.yoandroide.myapplication.Modelos.RegistroPapel;
 
 import java.util.ArrayList;
 
@@ -67,12 +66,14 @@ public class pantallaestadisticapapel extends AppCompatActivity {
 
         BarDataSet dataSet = new BarDataSet(entries, "Cantidad Reciclada por mes");
         BarData barData = new BarData(dataSet);
+        barChart.setData(barData);
 
         XAxis xAxis = barChart.getXAxis();
         xAxis.setPosition(XAxis.XAxisPosition.BOTTOM);
         xAxis.setGranularity(1f);
         xAxis.setValueFormatter(new IndexAxisValueFormatter(new String[]{"Ene", "Feb", "Mar", "Abr", "May", "Jun", "Jul", "Ago", "Sep", "Oct", "Nov", "Dic"}));
 
+        //Propiedades de las barras del grafico
         barChart.getAxisLeft().setAxisMaximum(100);
         barChart.getAxisRight().setAxisMaximum(100);
         barChart.getAxisRight().setEnabled(false);
