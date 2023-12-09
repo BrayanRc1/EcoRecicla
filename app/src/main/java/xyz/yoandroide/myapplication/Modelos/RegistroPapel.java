@@ -64,29 +64,27 @@ public class RegistroPapel extends RegistroBase {
             // Manejar error si no se puede convertir a un número
             Toast.makeText(this, "Ingrese una cantidad válida", Toast.LENGTH_SHORT).show();
         }
-
         super.registrarDatos();
     }
 
     @Override
-    protected void btnBorrarRegistro() {
-
-        super.btnBorrarRegistro();
-    }
+    protected void btnBorrarRegistro() {super.btnBorrarRegistro();}
 
     //Boton Inicio nos lleva a pantalla de la seseón iniciada
     public void pantallaSesionIniciada(View view) {
         Intent pantallaSesionIniciada = new Intent(this, activity_pantallainiciosesion.class);
         startActivity(pantallaSesionIniciada);
     }
+
     //Boton atras nos lleva a pantalla categorias
     public void pantallaCategoria(View view) {
         Intent pantallaCategoria = new Intent(this, categorias.class);
         startActivity(pantallaCategoria);
     }
+
     //Botton estadistica nos lleva a pantalla estadistica
-    public void pantallaEstadistica(View view) {
-        Intent pantallaEstadistica = new Intent(this, pantallaestadisticapapel.class);
-        startActivity(pantallaEstadistica);
+    public void pantallaestadisticapapel(View view) {
+        Intent pantallaestadisticapapel = new Intent(this, pantallaestadisticapapel.class);
+        startActivity(pantallaestadisticapapel);
     }
 }

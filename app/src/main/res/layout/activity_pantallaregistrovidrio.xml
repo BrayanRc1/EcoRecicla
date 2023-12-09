@@ -97,7 +97,7 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="5dp"
             android:backgroundTint="#7B9665"
-            android:onClick="pantallaEstadisticavidrio"
+            android:onClick="pantallaestadisticavidrio"
             android:text="Estadistica"
             android:textColor="@color/black"
             android:textSize="25sp" />
@@ -115,6 +115,5 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>

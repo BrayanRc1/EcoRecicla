@@ -100,6 +100,12 @@ public class pantallaestadisticapapel extends AppCompatActivity {
     public void pantallaregistropapel(View view){
         Intent pantallaregistropapel = new Intent(this, xyz.yoandroide.myapplication.Modelos.RegistroPapel.class);
         startActivity(pantallaregistropapel);
+
+    }public void pantallaestadisticageneral(View view){
+        Intent pantallaestadisticageneral = new Intent(this, pantallaestadisticageneral.class);
+        startActivity(pantallaestadisticageneral);
     }
+
+
 
 }

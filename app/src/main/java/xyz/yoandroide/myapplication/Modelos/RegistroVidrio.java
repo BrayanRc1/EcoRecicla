@@ -62,7 +62,6 @@ public class RegistroVidrio extends RegistroBase {
             // Manejar error si no se puede convertir a un número
             Toast.makeText(this, "Ingrese una cantidad válida", Toast.LENGTH_SHORT).show();
         }
-
         super.registrarDatos();
     }
 
@@ -85,8 +84,8 @@ public class RegistroVidrio extends RegistroBase {
     }
 
     //Botton estadistica nos lleva a pantalla estadistica
-    public void pantallaEstadisticavidrio(View view) {
-        Intent pantallaEstadisticavidrio = new Intent(this, pantallaestadisticavidrio.class);
-        startActivity(pantallaEstadisticavidrio);
+    public void pantallaestadisticavidrio(View view) {
+        Intent pantallaestadisticavidrio = new Intent(this, pantallaestadisticavidrio.class);
+        startActivity(pantallaestadisticavidrio);
     }
 }

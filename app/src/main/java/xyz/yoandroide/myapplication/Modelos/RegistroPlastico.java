@@ -13,7 +13,6 @@ import xyz.yoandroide.myapplication.pantallaestadisticaplastico;
 import xyz.yoandroide.myapplication.categorias;
 
 public class RegistroPlastico extends RegistroBase {
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -22,7 +21,6 @@ public class RegistroPlastico extends RegistroBase {
         adapterMaterial.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         spinnerMaterial.setAdapter(adapterMaterial);
     }
-
     @Override
     protected void registrarDatos() {
         // Acceder a los elementos de la interfaz ya configurados en RegistroBase
@@ -68,9 +66,7 @@ public class RegistroPlastico extends RegistroBase {
     }
 
     @Override
-    protected void btnBorrarRegistro() {
-        super.btnBorrarRegistro();
-    }
+    protected void btnBorrarRegistro() {super.btnBorrarRegistro();}
 
     //Boton Inicio nos lleva a pantalla de la sesión iniciada
     public void pantallaSesionIniciada(View view) {
@@ -85,8 +81,8 @@ public class RegistroPlastico extends RegistroBase {
     }
 
     //Botton estadistica nos lleva a pantalla estadistica
-    public void pantallaEstadisticaplastico(View view) {
-        Intent pantallaEstadisticaplastico = new Intent(this, pantallaestadisticaplastico.class);
-        startActivity(pantallaEstadisticaplastico);
+    public void pantallaestadisticaplastico(View view) {
+        Intent pantallaestadisticaplastico = new Intent(this, pantallaestadisticaplastico.class);
+        startActivity(pantallaestadisticaplastico);
     }
 }

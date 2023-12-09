@@ -15,22 +15,25 @@ public class categorias extends AppCompatActivity {
 
     }
     //Cambio de activity a Registro Papel
-    public void RegistroPapel(View view){
-        Intent RegistroPapel = new Intent(this, pantallaregistropapel.class);
+    public void RegistroPapel(View view) {
+        Intent RegistroPapel = new Intent(this, xyz.yoandroide.myapplication.Modelos.RegistroPapel.class);
         startActivity(RegistroPapel);
     }
+
     //Cambio de activity a Registro Plastico
-    public void RegistroPlastico(View view){
+    public void RegistroPlastico(View view) {
         Intent RegistroPlastico = new Intent(this, pantallaregistroplastico.class);
         startActivity(RegistroPlastico);
     }
+
     //Cambio de activity a Registro Vidrio
-    public void RegistroVidrio(View view){
+    public void RegistroVidrio(View view) {
         Intent RegistroVidrio = new Intent(this, pantallaregistrovidrio.class);
         startActivity(RegistroVidrio);
     }
+
     //Cambio de activity a Sesion iniciada
-    public void pantallaSesionIniciada(View view){
+    public void pantallaSesionIniciada(View view) {
         Intent pantallaSesionIniciada = new Intent(this, activity_pantallainiciosesion.class);
         startActivity(pantallaSesionIniciada);
     }

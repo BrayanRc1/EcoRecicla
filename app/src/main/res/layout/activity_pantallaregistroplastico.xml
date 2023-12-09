@@ -97,7 +97,7 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="5dp"
             android:backgroundTint="#BBB5B5"
-            android:onClick="pantallaEstadisticaplastico"
+            android:onClick="pantallaestadisticaplastico"
             android:text="Estadistica"
             android:textColor="@color/black"
             android:textSize="25sp" />
