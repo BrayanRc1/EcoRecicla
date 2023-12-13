@@ -43,18 +43,6 @@ public class RegistroPapel extends RegistroBase {
             // Suma de las cantidades
             float cantidadNueva = cantidadAnterior + (float) cantidadReciclada;
 
-            // Almacenar datos en SharedPreferences
-            SharedPreferences.Editor editor = prefs.edit();
-
-            // Utilizar claves únicas para cada tipo de dato
-            editor.putString("cantidad", cantidad);
-            editor.putString("papel", papel);
-            editor.putString("mes", mes);
-            editor.putFloat("cantidad_" + mes, cantidadNueva);
-
-            // Aplicar los cambios
-            editor.apply();
-
             // Mostrar mensaje de registro exitoso
             Toast.makeText(this, "Registro de papel exitoso", Toast.LENGTH_SHORT).show();
 

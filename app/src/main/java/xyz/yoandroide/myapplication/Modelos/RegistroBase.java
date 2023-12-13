@@ -69,7 +69,6 @@ public class RegistroBase extends AppCompatActivity {
             double cantidadReciclada = Double.parseDouble(cantidad);
 
             // Obtener el objeto SharedPreferences correspondiente al tipo de material
-
             SharedPreferences prefs;
             if ("Papel".equals(material)) {
                 prefs = getSharedPreferences(PREFS_NAME_PAPEL, MODE_PRIVATE);

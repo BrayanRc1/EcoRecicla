@@ -4,7 +4,6 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Adapter;
 import android.widget.ArrayAdapter;
 import android.widget.Toast;
 
@@ -15,7 +14,7 @@ import xyz.yoandroide.myapplication.pantallaestadisticaplastico;
 
 public class RegistroPlastico extends RegistroBase {
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
         // Crea un ArrayAdapter por cada elemento del array
         ArrayAdapter<CharSequence> adapterMaterial = ArrayAdapter.createFromResource(this, R.array.array_plastico, android.R.layout.simple_spinner_item);
