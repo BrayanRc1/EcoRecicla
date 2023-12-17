@@ -14,7 +14,7 @@ import xyz.yoandroide.myapplication.pantallaestadisticapapel;
 
 public class RegistroPapel extends RegistroBase {
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         // Crea un ArrayAdapter por cada elemento del array
         ArrayAdapter<CharSequence> adapterMaterial = ArrayAdapter.createFromResource(this, R.array.array_papel, android.R.layout.simple_spinner_item);
@@ -22,7 +22,7 @@ public class RegistroPapel extends RegistroBase {
         spinnerMaterial.setAdapter(adapterMaterial);
     }
     @Override
-    protected void registrarDatos() {
+    public void registrarDatos() {
         // Acceder a los elementos de la interfaz ya configurados en RegistroBase
         String cantidad = editTextCantidad.getText().toString();
         String papel = spinnerMaterial.getSelectedItem().toString();
@@ -44,7 +44,7 @@ public class RegistroPapel extends RegistroBase {
             float cantidadNueva = cantidadAnterior + (float) cantidadReciclada;
 
             // Mostrar mensaje de registro exitoso
-            Toast.makeText(this, "Registro de papel exitoso", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "Registro exitoso", Toast.LENGTH_SHORT).show();
 
         } catch (NumberFormatException e) {
             // Manejar error si no se puede convertir a un número
@@ -54,7 +54,7 @@ public class RegistroPapel extends RegistroBase {
     }
 
     @Override
-    protected void btnBorrarRegistro() {super.btnBorrarRegistro();}
+    public void btnBorrarRegistro() {super.btnBorrarRegistro();}
 
     //Boton Inicio nos lleva a pantalla de la seseón iniciada
     public void pantallaSesionIniciada(View view) {

@@ -96,9 +96,4 @@ public class pantallaestadisticaplastico extends AppCompatActivity {
         Intent pantallaCategoria = new Intent(this, categorias.class);
         startActivity(pantallaCategoria);
     }
-    public void RegistroPlastico(View view) {
-        Intent RegistroPlastico = new Intent(this, pantallaregistroplastico.class);
-        startActivity(RegistroPlastico);
-    }
-
 }

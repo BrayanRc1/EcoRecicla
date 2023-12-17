@@ -22,7 +22,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:layout_marginBottom="16dp"
-            android:text="Registro de Reciclaje del Papel"
+            android:text="Registro del Reciclaje"
             android:textColor="@color/white"
             android:textSize="20sp"
             android:textStyle="bold" />
@@ -85,22 +85,13 @@
         <Button
             android:layout_width="160dp"
             android:layout_height="wrap_content"
-            android:text="Atras"
-            android:onClick="pantallaCategoria"
-            android:backgroundTint="#99B2D0"
             android:layout_marginRight="5dp"
+            android:backgroundTint="#99B2D0"
+            android:onClick="pantallaCategoria"
+            android:text="Atras"
             android:textColor="@color/black"
             android:textSize="25sp" />
 
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="5dp"
-            android:backgroundTint="#99B2D0"
-            android:onClick="pantallaestadisticapapel"
-            android:text="Estadistica"
-            android:textColor="@color/black"
-            android:textSize="25sp" />
     </LinearLayout>
 
     <Button

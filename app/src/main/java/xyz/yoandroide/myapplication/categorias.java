@@ -20,16 +20,10 @@ public class categorias extends AppCompatActivity {
         startActivity(RegistroPapel);
     }
 
-    //Cambio de activity a Registro Plastico
-    public void RegistroPlastico(View view) {
-        Intent RegistroPlastico = new Intent(this, pantallaregistroplastico.class);
-        startActivity(RegistroPlastico);
-    }
-
-    //Cambio de activity a Registro Vidrio
-    public void RegistroVidrio(View view) {
-        Intent RegistroVidrio = new Intent(this, pantallaregistrovidrio.class);
-        startActivity(RegistroVidrio);
+    //Cambio de activity a Registro
+    public void RegistroGenreal(View view) {
+        Intent RegistroGenreal = new Intent(this, pantallaestadisticageneral.class);
+        startActivity(RegistroGenreal);
     }
 
     //Cambio de activity a Sesion iniciada

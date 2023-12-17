@@ -31,6 +31,10 @@
                 android:textSize="30dp"/>
         </androidx.cardview.widget.CardView>
 
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="50dp"/>
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -44,18 +48,20 @@
                 app:cardCornerRadius="15dp">
 
                 <ImageButton
-                    android:layout_width="225dp"
-                    android:layout_height="190dp"
-                    android:layout_marginLeft="-10dp"
-                    android:layout_marginTop="-5dp"
+                    android:layout_width="150dp"
+                    android:layout_height="183dp"
+                    android:layout_gravity="center"
                     android:contentDescription="imgcategoria"
                     android:onClick="RegistroPapel"
                     android:scaleType="centerCrop"
-                    android:src="@drawable/imgpapel" />
+                    android:src="@drawable/imgregistro" />
 
             </androidx.cardview.widget.CardView>
 
         </LinearLayout>
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="20dp"/>
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -69,41 +75,26 @@
                 app:cardCornerRadius="15dp">
 
                 <ImageButton
-                    android:layout_width="225dp"
+                    android:layout_width="155dp"
                     android:layout_height="190dp"
-                    android:layout_marginLeft="-10dp"
+                    android:layout_gravity="center"
                     android:layout_marginTop="-5dp"
                     android:contentDescription="imgcategoria"
-                    android:onClick="RegistroPlastico"
+                    android:onClick="RegistroGenreal"
                     android:scaleType="centerCrop"
-                    android:src="@drawable/imgplastico" />
+                    android:src="@drawable/imgestadistica" />
 
             </androidx.cardview.widget.CardView>
 
         </LinearLayout>
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="130dp"/>
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
-
-            <androidx.cardview.widget.CardView
-                android:layout_width="200dp"
-                android:layout_height="170dp"
-                android:layout_marginLeft="105dp"
-                android:layout_marginTop="15dp"
-                app:cardCornerRadius="15dp">
-
-                <ImageButton
-                    android:layout_width="225dp"
-                    android:layout_height="190dp"
-                    android:layout_marginLeft="-10dp"
-                    android:layout_marginTop="-5dp"
-                    android:contentDescription="imgcategoria"
-                    android:onClick="RegistroVidrio"
-                    android:scaleType="centerCrop"
-                    android:src="@drawable/imgvidrio" />
-
-            </androidx.cardview.widget.CardView>
 
             <Button
                 android:layout_width="170dp"

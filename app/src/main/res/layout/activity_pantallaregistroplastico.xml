@@ -27,7 +27,7 @@
             android:textSize="20sp"
             android:textStyle="bold" />
         <EditText
-            android:id="@+id/editTextCantidad"
+            android:id="@+id/editTextCantidadPlastico"
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:layout_marginBottom="16dp"
@@ -44,7 +44,7 @@
             android:background="@color/hueso"
             android:visibility="visible"/>
         <Spinner
-            android:id="@+id/spinnerMes"
+            android:id="@+id/spinnerMesplastico"
             android:layout_width="match_parent"
             android:layout_height="55dp"
             android:layout_marginBottom="16dp"
@@ -52,7 +52,7 @@
             android:background="@color/hueso"
             android:hint="Seleccione Mes" />
         <Button
-            android:id="@+id/btnRegistrar"
+            android:id="@+id/btnRegistrarPlastico"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
@@ -61,7 +61,7 @@
             android:textSize="25dp"
             android:backgroundTint="#C8E0B4"/>
         <Button
-            android:id="@+id/btnBorrarRegistro"
+            android:id="@+id/btnBorrarRegistroPlastico"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
@@ -115,6 +115,5 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -25,7 +25,7 @@ public class RegistroBase extends AppCompatActivity {
     protected static final String PREFS_NAME_VIDRIO = "RegistroPrefsVidrio";
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_pantallaregistropapel);
 
@@ -54,7 +54,7 @@ public class RegistroBase extends AppCompatActivity {
         });
     }
 
-    protected void registrarDatos() {
+    public void registrarDatos() {
         String cantidad = editTextCantidad.getText().toString();
         String material = spinnerMaterial.getSelectedItem().toString();
         String mes = spinnerMes.getSelectedItem().toString();
@@ -104,7 +104,7 @@ public class RegistroBase extends AppCompatActivity {
         }
     }
 
-    protected void btnBorrarRegistro() {
+    public void btnBorrarRegistro() {
         SharedPreferences prefs;
 
         // Borrar registros para cada tipo de material

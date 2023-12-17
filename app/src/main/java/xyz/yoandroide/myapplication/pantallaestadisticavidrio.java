@@ -96,9 +96,4 @@ public class pantallaestadisticavidrio extends AppCompatActivity {
         Intent pantallaCategoria = new Intent(this, categorias.class);
         startActivity(pantallaCategoria);
     }
-    public void RegistroVidrio(View view) {
-        Intent RegistroVidrio = new Intent(this, pantallaregistrovidrio.class);
-        startActivity(RegistroVidrio);
-    }
-
 }

@@ -14,15 +14,15 @@ import xyz.yoandroide.myapplication.pantallaestadisticavidrio;
 
 public class RegistroVidrio extends RegistroBase {
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         // Crea un ArrayAdapter por cada elemento del array
-        ArrayAdapter<CharSequence> adapterMaterial = ArrayAdapter.createFromResource(this, R.array.array_vidrio, android.R.layout.simple_spinner_item);
+        ArrayAdapter<CharSequence> adapterMaterial = ArrayAdapter.createFromResource(this, R.array.array_papel, android.R.layout.simple_spinner_item);
         adapterMaterial.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         spinnerMaterial.setAdapter(adapterMaterial);
     }
     @Override
-    protected void registrarDatos() {
+    public void registrarDatos() {
         // Acceder a los elementos de la interfaz ya configurados en RegistroBase
         String cantidad = editTextCantidad.getText().toString();
         String vidrio = spinnerMaterial.getSelectedItem().toString();
@@ -66,7 +66,7 @@ public class RegistroVidrio extends RegistroBase {
     }
 
     @Override
-    protected void btnBorrarRegistro() {
+    public void btnBorrarRegistro() {
 
         super.btnBorrarRegistro();
     }
