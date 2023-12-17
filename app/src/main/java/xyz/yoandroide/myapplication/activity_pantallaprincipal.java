@@ -25,7 +25,7 @@ public class activity_pantallaprincipal extends AppCompatActivity {
     Button btnOlvidarContrasenia;
     EditText editTexCorreo;
     EditText editTextConstrasenia;
-    Intent activity_pantallaregistro;
+    Intent pantallaregistro1;
     Intent activity_pantallainiciosesion;
     Intent activity_pantallarecuperarcontrasenia;
     ArrayList<Usuarios> usuarios;
@@ -41,7 +41,7 @@ public class activity_pantallaprincipal extends AppCompatActivity {
         btnOlvidarContrasenia = findViewById(R.id.btnOlvidarContrasenia);
         editTexCorreo = findViewById(R.id.editTexCorreo);
         editTextConstrasenia = findViewById(R.id.editTextConstrasenia);
-        activity_pantallaregistro = new Intent(this, activity_pantallaregistro.class);
+        pantallaregistro1 = new Intent(this, pantallaregistro1.class);
         activity_pantallainiciosesion = new Intent(this, activity_pantallainiciosesion.class);
         activity_pantallarecuperarcontrasenia = new Intent(this, activity_pantallarecuperarcontrasenia.class);
 
@@ -106,7 +106,7 @@ public class activity_pantallaprincipal extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 // Iniciar la actividad de registro de usuario
-                startActivity(activity_pantallaregistro);
+                startActivity(pantallaregistro1);
             }
         });
 
