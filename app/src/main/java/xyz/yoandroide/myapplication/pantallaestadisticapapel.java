@@ -78,6 +78,9 @@ public class pantallaestadisticapapel extends AppCompatActivity {
         barChart.getAxisRight().setAxisMaximum(100);
         barChart.getAxisRight().setEnabled(false);
         barChart.setBackgroundColor(Color.rgb(224, 228, 228));
+        barChart.getXAxis().setTextSize(15);
+        barChart.getBarData().setValueTextSize(12);
+        barChart.getAxisLeft().setTextSize(12);
         barChart.setData(barData);
         barChart.invalidate();
     }
